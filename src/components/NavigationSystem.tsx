@@ -83,7 +83,7 @@ export function NavigationSystem({ pages, currentPage, onNavigate }: NavigationS
       </div>
 
       {showHelp && (
-        <div className="bg-gray-900/30 border border-gray-700 rounded p-4 mb-4">
+        <div className="bg-gray-900/30 border border-gray-700 rounded p-2 sm:p-4 mb-4">
           <TypewriterText 
             text="Available commands:"
             className="text-amber-300 mb-2"
@@ -113,7 +113,7 @@ export function NavigationSystem({ pages, currentPage, onNavigate }: NavigationS
       )}
 
       {showWhoami && (
-        <div className="bg-gray-900/30 border border-gray-700 rounded p-4 mb-4">
+        <div className="bg-gray-900/30 border border-gray-700 rounded p-2 sm:p-4 mb-4">
           <TypewriterText
             text="> whoami"
             className="text-green-400 mb-2"

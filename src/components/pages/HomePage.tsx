@@ -90,10 +90,10 @@ Two passions. One journey. Infinite possibilities.`}
             />
           </div>
           <div className="relative">
-            <ImageWithFallback 
+            <ImageWithFallback
               src="https://images.unsplash.com/photo-1735757608801-04504c854e47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdXR1cmUlMjB0ZWNobm9sb2d5JTIwMjA0NiUyMGRpZ2l0YWwlMjB3b3JsZHxlbnwxfHx8fDE3NTg4NzM2Njl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt="Future digital world 2046"
-              className="w-full h-48 object-cover rounded-lg border border-gray-700"
+              className="w-full h-32 sm:h-48 object-cover rounded-lg border border-gray-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg"></div>
           </div>

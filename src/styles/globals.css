@@ -187,3 +187,23 @@
 html {
   font-size: var(--font-size);
 }
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 640px) {
+  :root {
+    --radius: 0.5rem;
+  }
+}

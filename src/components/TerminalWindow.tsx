@@ -13,7 +13,7 @@ export function TerminalWindow({ children }: TerminalWindowProps) {
       
       <TerminalHeader />
       
-      <div className="relative bg-black/90 p-6 min-h-[600px] font-mono">
+      <div className="relative bg-black/90 p-4 sm:p-6 min-h-[400px] sm:min-h-[600px] font-mono">
         {children}
       </div>
     </div>

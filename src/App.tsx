@@ -42,7 +42,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 p-2 sm:p-4">
       <div className="max-w-6xl mx-auto">
         <TerminalWindow>
           <div className="space-y-6">
