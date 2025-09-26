@@ -1,147 +1,103 @@
-import React, { useState, useEffect } from 'react';
-import { TypewriterText } from '../TypewriterText';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Button } from '../ui/button';
-import { Lightbulb, BookOpen, Users, Rocket, Mountain, Star } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { TypewriterText } from "../TypewriterText";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
+import { Piano, Code, Zap, Target } from "lucide-react";
 
 interface ExperiencesPageProps {
   onNavigate: (pageId: string) => void;
   onExplored: (sectionId: string) => void;
 }
 
-export function ExperiencesPage({ onNavigate, onExplored }: ExperiencesPageProps) {
+export function ExperiencesPage({
+  onNavigate,
+  onExplored,
+}: ExperiencesPageProps) {
   const [showIntro, setShowIntro] = useState(false);
   const [showExperiences, setShowExperiences] = useState(false);
-  const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
+  const [selectedExperience, setSelectedExperience] = useState<number | null>(
+    null
+  );
 
   useEffect(() => {
-    setTimeout(() => setShowIntro(true), 500);
-    setTimeout(() => setShowExperiences(true), 2000);
-    onExplored('experiences');
+    const timeout1 = setTimeout(() => setShowIntro(true), 500);
+    const timeout2 = setTimeout(() => setShowExperiences(true), 2000);
+    onExplored("experiences");
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+    };
   }, [onExplored]);
 
   const formativeExperiences = [
     {
-      icon: <Lightbulb className="w-6 h-6" />,
-      title: "Early Problem-Solving Revelation",
-      period: "Childhood - Age 12",
-      lesson: "The power of breaking down complex challenges",
-      story: `When I was 12, I became fascinated with fixing broken electronics around the house. 
-      What started as curiosity about how things worked became a formative lesson in systematic thinking.
-      
-      I remember spending hours taking apart an old radio, mapping each component, and slowly 
-      understanding how they worked together. When I finally got it working again, it wasn't 
-      just the satisfaction of success—it was the realization that any complex problem could be 
-      solved by breaking it into smaller, manageable pieces.
-      
-      This experience shaped my approach to everything from school projects to career challenges. 
-      It taught me patience, methodology, and the confidence that persistence pays off.`,
-      impact: "Developed systematic problem-solving approach and resilience",
-      color: "border-yellow-400 text-yellow-400"
+      icon: <Piano className="w-6 h-6" />,
+      title: "First Piano Lesson",
+      period: "Age 8",
+      lesson: "Complexity yields to practice",
+      story: `Sitting at the piano bench for the first time, staring at black and white keys that seemed like a foreign language. My teacher played a simple melody—it sounded impossible.
+
+"Start with one note," she said.
+
+That lesson changed everything. Complex music was just simple notes in sequence. Difficult pieces were just easy sections connected. This thinking now applies to everything: complex code, challenging goals, global business plans.
+
+One note. One step. One day at a time.`,
+      impact:
+        "Learned that mastery comes through deliberate practice and patience",
+      color: "border-blue-400 text-blue-400",
+      image:
+        "https://images.unsplash.com/photo-1636916368580-8f99867e6e14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWFubyUyMG11c2ljJTIwdGVhY2hpbmclMjBnbG9iYWwlMjB3b3JsZHxlbnwxfHx8fDE3NTg4NzM2NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "Academic Struggle & Growth",
-      period: "High School - Age 16",
-      lesson: "Failure as a catalyst for growth",
-      story: `Junior year of high school, I failed my first major exam in Advanced Chemistry. 
-      I had always been a strong student, so this failure hit me hard. Instead of giving up 
-      or making excuses, I decided to completely change my study approach.
-      
-      I started forming study groups, seeking help from teachers, and most importantly, 
-      learning to ask better questions. By the end of the year, not only had I recovered 
-      my grade, but I was tutoring other students.
-      
-      This experience taught me that intelligence isn't fixed—it's about how you respond to 
-      challenges. It also showed me the value of community and collaboration in overcoming obstacles.`,
-      impact: "Embraced growth mindset and collaborative learning",
-      color: "border-blue-400 text-blue-400"
+      icon: <Code className="w-6 h-6" />,
+      title: "First Working Program",
+      period: "Age 14",
+      lesson: "Logic conquers chaos",
+      story: `Hours of frustration debugging my first Python program. Error after error. Nothing worked.
+
+Then suddenly—it ran. A simple calculator, but it worked perfectly.
+
+That moment taught me computers aren't magic. They're logic machines. Any problem can be solved with the right sequence of instructions. This mindset now drives everything: teaching systems, business processes, life optimization.
+
+If it can be broken down logically, it can be built successfully.`,
+      impact: "Developed systematic thinking and problem decomposition skills",
+      color: "border-green-400 text-green-400",
+      image:
+        "https://images.unsplash.com/photo-1652696290920-ee4c836c711e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwbGFwdG9wJTIwY29kaW5nfGVufDF8fHx8MTc1ODg3MzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Leadership Under Pressure",
-      period: "College - Age 20",
-      lesson: "True leadership emerges in difficult moments",
-      story: `During my sophomore year, I was elected to lead a student organization just as it faced 
-      a major crisis—funding cuts that threatened our biggest annual event. Instead of canceling, 
-      I rallied the team to think creatively.
-      
-      We reached out to local businesses, organized smaller fundraising events, and completely 
-      reimagined our approach. Not only did we save the event, but we made it more successful 
-      than previous years by building stronger community connections.
-      
-      This experience taught me that leadership isn't about having all the answers—it's about 
-      bringing out the best in others and maintaining vision when things get tough.`,
-      impact: "Learned authentic leadership and crisis management",
-      color: "border-green-400 text-green-400"
+      icon: <Zap className="w-6 h-6" />,
+      title: "First Marathon",
+      period: "Age 17",
+      lesson: "Challenge is what makes us not just physically, but mentally strong",
+      story: `Mile 20. Everything hurt. Mind screaming "STOP."
+
+But I'd trained for this moment—not just physically, but mentally. Months of running when I didn't want to. Getting up early when it was cold. Pushing through when every excuse seemed reasonable.
+
+Crossing that finish line taught me the difference between discomfort and damage. Most limitations are mental. When you train yourself to persist through discomfort, you unlock capabilities you never knew existed.
+
+This lesson powers everything from difficult coding sessions to challenging piano pieces to building global businesses.`,
+      impact: "Discovered that mental resilience is trainable and transferable",
+      color: "border-red-400 text-red-400",
+      image:
+        "https://images.unsplash.com/photo-1758506971667-fbaa8942258a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwbWFyYXRob24lMjBlbmR1cmFuY2UlMjBjaGFsbGVuZ2V8ZW58MXx8fHwxNzU4ODczNjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
-    {
-      icon: <Rocket className="w-6 h-6" />,
-      title: "First Professional Challenge",
-      period: "Early Career - Age 23",
-      lesson: "Innovation requires courage to challenge status quo",
-      story: `In my first job, I noticed an inefficient process that was costing the company significant 
-      time and money. As the newest team member, I was nervous about suggesting changes, but I decided 
-      to prepare a detailed proposal with research and potential solutions.
-      
-      Not only was my suggestion implemented, but it led to a company-wide process improvement initiative. 
-      This experience taught me that good ideas can come from anywhere, and that speaking up—when done 
-      thoughtfully—is a responsibility, not just a right.
-      
-      It also showed me the importance of doing your homework before proposing changes and the value 
-      of thinking beyond your immediate role.`,
-      impact: "Gained confidence to innovate and influence positive change",
-      color: "border-purple-400 text-purple-400"
-    },
-    {
-      icon: <Mountain className="w-6 h-6" />,
-      title: "Personal Challenge & Resilience",
-      period: "Mid-twenties - Age 25",
-      lesson: "Physical challenges build mental strength",
-      story: `I decided to train for and complete a marathon, despite never being much of a runner. 
-      The six-month training process was grueling, with multiple setbacks including minor injuries 
-      and mental barriers I had to overcome.
-      
-      The experience of pushing through when I wanted to quit, adjusting my training when things 
-      weren't working, and ultimately crossing the finish line taught me invaluable lessons about 
-      persistence, adaptation, and the power of incremental progress.
-      
-      More importantly, it showed me that the skills needed for physical achievement—discipline, 
-      consistency, goal-setting, recovery—directly translate to professional and personal success.`,
-      impact: "Developed discipline, persistence, and holistic approach to achievement",
-      color: "border-orange-400 text-orange-400"
-    },
-    {
-      icon: <Star className="w-6 h-6" />,
-      title: "Mentorship Awakening",
-      period: "Recent - Age 26",
-      lesson: "Success multiplies when shared with others",
-      story: `I began mentoring a younger colleague who was struggling with confidence and direction. 
-      Through our weekly conversations, I realized that helping others succeed was incredibly fulfilling 
-      and that I had more wisdom to offer than I had recognized.
-      
-      Watching her grow, succeed, and eventually become a mentor herself showed me the ripple effect 
-      of investment in others. It also clarified my own values and goals by forcing me to articulate 
-      what I believed about success, growth, and leadership.
-      
-      This ongoing experience has reinforced my belief that true success includes lifting others up 
-      and that teaching is one of the best ways to continue learning.`,
-      impact: "Discovered passion for developing others and multiplicative success",
-      color: "border-red-400 text-red-400"
-    }
   ];
 
   return (
     <div className="space-y-6">
       {showIntro && (
         <div className="border-l-4 border-green-400 pl-4">
-          <TypewriterText 
-            text={`KEY EXPERIENCES THAT SHAPED MY PATH
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          <TypewriterText
+            text={`BUILDING BLOCKS OF SUCCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-These formative moments didn't just happen to me—they shaped
-how I think, lead, and define success. Each taught me something
-essential about the journey to meaningful achievement.`}
+Three experiences. Two values confirmed.
+One path to global freedom.
+
+Every master was once a beginner.`}
             className="text-green-400 whitespace-pre-line"
             speed={25}
           />
@@ -149,94 +105,89 @@ essential about the journey to meaningful achievement.`}
       )}
 
       {showExperiences && (
-        <div className="space-y-4">
-          <div className="text-center mb-6">
-            <TypewriterText 
-              text="Click any experience to explore its impact:"
-              className="text-amber-300"
-              delay={500}
-            />
-          </div>
-
-          <div className="space-y-4">
+        <div className="space-y-6">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-stretch">
             {formativeExperiences.map((experience, index) => (
-              <Card 
-                key={index}
-                className={`bg-gray-900/50 border-gray-700 hover:${experience.color.split(' ')[0]} cursor-pointer transition-all duration-300 ${
-                  selectedExperience === index ? experience.color.split(' ')[0] : ''
-                }`}
-                onClick={() => setSelectedExperience(selectedExperience === index ? null : index)}
-              >
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center space-x-3">
-                      <div className={experience.color.split(' ')[1]}>
-                        {experience.icon}
-                      </div>
-                      <div>
-                        <CardTitle className={`${experience.color.split(' ')[1]} text-lg`}>
-                          {experience.title}
-                        </CardTitle>
-                        <div className="text-gray-400 text-sm">{experience.period}</div>
-                      </div>
-                    </div>
-                    <div className="text-xs text-gray-500">
-                      {selectedExperience === index ? 'Click to collapse' : 'Click to expand'}
+              <div key={index} className="flex-1 min-w-0 max-w-md mx-auto md:mx-0">
+                <Card
+                  className={`flex flex-col h-full bg-gray-900/50 border-gray-700 hover:${
+                    experience.color.split(" ")[0]
+                  } cursor-pointer transition-all h-[320px]`}
+                >
+                  {/* Image section - much smaller */}
+                  <div className="relative flex-shrink-0">
+                    <ImageWithFallback
+                      src={experience.image}
+                      alt={experience.title}
+                      className="w-full h-20 object-cover rounded-t-lg"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-t-lg"></div>
+                    <div
+                      className={`absolute top-2 right-2 p-1.5 rounded-full bg-black/70 ${
+                        experience.color.split(" ")[1]
+                      }`}
+                    >
+                      {experience.icon}
                     </div>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <div className={`${experience.color.split(' ')[1]} text-sm mb-3 font-medium`}>
-                    Key Lesson: {experience.lesson}
-                  </div>
-                  
-                  {selectedExperience === index && (
-                    <div className="space-y-4">
-                      <div className="p-4 bg-black/30 rounded border-l-2 border-gray-600">
-                        <h4 className="text-amber-300 text-sm mb-2">The Story</h4>
-                        <p className="text-gray-300 text-sm leading-relaxed whitespace-pre-line">
-                          {experience.story}
-                        </p>
-                      </div>
-                      
-                      <div className="p-4 bg-gray-800/30 rounded">
-                        <h4 className="text-green-400 text-sm mb-2">Impact on My Success Journey</h4>
-                        <p className="text-gray-300 text-sm">
-                          {experience.impact}
-                        </p>
-                      </div>
+
+                  {/* Text section - more space now */}
+                  <div className="flex flex-col flex-1 justify-between p-4">
+                    <div className="flex-1">
+                      <h3
+                        className={`text-lg font-semibold mb-2 ${
+                          experience.color.split(" ")[1]
+                        }`}
+                      >
+                        {experience.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm mb-3">{experience.period}</p>
+                      <p className={`${experience.color.split(" ")[1]} text-sm font-medium leading-relaxed`}>
+                        {experience.lesson}
+                      </p>
                     </div>
-                  )}
-                </CardContent>
-              </Card>
+                  </div>
+                </Card>
+              </div>
             ))}
           </div>
 
-          <div className="mt-8 p-6 bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg">
-            <h3 className="text-green-400 mb-3">The Pattern</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Looking at these experiences, I see a clear pattern: growth comes from embracing challenges, 
-              learning from failures, and consistently choosing courage over comfort. Each experience built 
-              on the previous ones, creating a foundation of resilience, leadership, and purpose.
+          <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <Target className="w-6 h-6 text-green-400" />
+              <h3 className="text-green-400 text-xl">The Foundation is Set</h3>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              <span className="text-amber-300">Age 8:</span> Piano teaches
+              patience and practice
             </p>
-            <p className="text-gray-300 text-sm leading-relaxed mt-3">
-              These aren't just memories—they're the building blocks of who I'm becoming. They inform how 
-              I approach new challenges and remind me that every setback is an opportunity for growth.
+            <p className="text-gray-300 leading-relaxed">
+              <span className="text-amber-300">Age 14:</span> Code teaches logic
+              and systems thinking
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              <span className="text-amber-300">Age 17:</span> Running teaches
+              persistence and mental toughness
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-3">
+              <span className="text-green-400">Result:</span> By 19, I already
+              have the core skills and mindset for global success. The next 21
+              years will build on this foundation.
             </p>
           </div>
 
-          <div className="flex justify-center space-x-4 mt-6">
-            <Button 
-              onClick={() => onNavigate('values')}
+          <div className="flex justify-center space-x-4">
+            <Button
+              onClick={() => onNavigate("values")}
               className="bg-purple-400/20 border border-purple-400 text-purple-400 hover:bg-purple-400/30"
             >
-              Discover My Core Values →
+              Core Values →
             </Button>
-            <Button 
-              onClick={() => onNavigate('decisions')}
+            <Button
+              onClick={() => onNavigate("decisions")}
               className="bg-yellow-400/20 border border-yellow-400 text-yellow-400 hover:bg-yellow-400/30"
             >
-              See Critical Decisions →
+              Key Decisions →
             </Button>
           </div>
         </div>

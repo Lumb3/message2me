@@ -41,13 +41,7 @@ export function TypewriterText({
     return () => clearTimeout(timeout);
   }, [text, delay, speed, onComplete, startTyping]);
 
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 500);
 
-    return () => clearInterval(cursorInterval);
-  }, []);
 
   return (
     <span className={className}>

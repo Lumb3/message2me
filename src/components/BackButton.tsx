@@ -22,7 +22,7 @@ export function BackButton({ onNavigate, currentPage }: BackButtonProps) {
         className="bg-gray-800/50 border-gray-600 text-gray-300 hover:bg-gray-700/50 hover:text-white transition-all duration-200 text-xs"
       >
         <ArrowLeft className="w-3 h-3 mr-2" />
-        Back to Main
+        Back to Home
       </Button>
       
       <div className="flex items-center space-x-2 text-xs text-gray-500">

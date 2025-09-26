@@ -3,7 +3,8 @@ import { TypewriterText } from '../TypewriterText';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Progress } from '../ui/progress';
-import { ArrowRight, CheckCircle, Target, Calendar, Users, TrendingUp } from 'lucide-react';
+import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { Piano, Laptop, Globe, Calendar, Target, Plane } from 'lucide-react';
 
 interface JourneyPageProps {
   onNavigate: (pageId: string) => void;
@@ -13,140 +14,135 @@ interface JourneyPageProps {
 export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
   const [showIntro, setShowIntro] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
-  const [showSynthesis, setShowSynthesis] = useState(false);
+  const [showVision, setShowVision] = useState(false);
   const [activePhase, setActivePhase] = useState<number | null>(null);
 
   useEffect(() => {
-    setTimeout(() => setShowIntro(true), 500);
-    setTimeout(() => setShowTimeline(true), 2000);
-    setTimeout(() => setShowSynthesis(true), 4000);
+    const timeout1 = setTimeout(() => setShowIntro(true), 500);
+    const timeout2 = setTimeout(() => setShowTimeline(true), 2000);
+    const timeout3 = setTimeout(() => setShowVision(true), 4000);
     onExplored('journey');
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+      clearTimeout(timeout3);
+    };
   }, [onExplored]);
 
   const journeyPhases = [
     {
-      title: "Foundation Building",
-      timeframe: "Age 25-28",
-      focus: "Skill Development & Network Building",
+      title: "Foundation Era",
+      timeframe: "2025-2029 (Age 19-23)",
+      focus: "Building Core Skills",
       keyActions: [
-        "Choose growth-oriented roles over high-salary positions",
-        "Invest 20% of time in continuous learning",
-        "Build authentic professional relationships",
-        "Establish financial discipline and investment habits"
+        "Master piano fundamentals & advanced techniques",
+        "Learn 3+ programming languages proficiently",
+        "Study abroad in 2+ countries",
+        "Build first income streams from both skills"
       ],
-      experiences: ["Early problem-solving challenges", "Academic struggles that built resilience"],
-      values: ["Continuous Growth", "Authentic Leadership"],
-      decisions: ["Purpose over prestige", "Strategic relationship building"],
+      experiences: ["Challenge builds strength through difficult pieces", "Persistence through complex coding projects"],
+      values: ["Challenge Makes Us Stronger", "Persistence Wins Everything"],
+      decisions: ["Choose growth over comfort", "Invest in dual passions"],
       milestones: [
-        "Master core professional skills",
-        "Build diverse network of mentors and peers",
-        "Establish emergency fund and investment portfolio",
-        "Complete first major international experience"
+        "Complete music performance degree",
+        "Build first commercial app",
+        "Teach first piano students",
+        "Achieve fluency in 2nd language"
       ],
-      color: "border-blue-400 text-blue-400"
+      color: "border-blue-400 text-blue-400",
+      icon: <Target className="w-6 h-6" />
     },
     {
-      title: "Leadership Emergence",
-      timeframe: "Age 28-32",
-      focus: "Taking Initiative & Building Influence",
+      title: "Building Era", 
+      timeframe: "2029-2034 (Age 23-28)",
+      focus: "Creating Systems & Networks",
       keyActions: [
-        "Seek leadership roles and challenging projects",
-        "Begin mentoring others and sharing knowledge",
-        "Develop global perspective through international work",
-        "Make first strategic career pivot if needed"
+        "Launch first piano teaching studio",
+        "Develop music education software platform",
+        "Establish remote work systems",
+        "Build international network"
       ],
-      experiences: ["Leadership under pressure", "First professional innovation"],
-      values: ["Meaningful Impact", "Deep Relationships"],
-      decisions: ["Global perspective development", "Continuous education investment"],
+      experiences: ["Running challenges build mental resilience", "First teaching successes validate approach"],
+      values: ["Challenge Makes Us Stronger", "Persistence Wins Everything"],
+      decisions: ["Location independence over traditional career", "Technology + Music fusion"],
       milestones: [
-        "Lead successful high-impact projects",
-        "Build reputation as thought leader in chosen field",
-        "Develop proficiency in second language",
-        "Achieve financial independence milestone (25% to goal)"
+        "Open 3 piano studio locations",
+        "Generate $100K+ from software",
+        "Live in 5+ countries",
+        "Student performance competition wins"
       ],
-      color: "border-green-400 text-green-400"
+      color: "border-green-400 text-green-400",
+      icon: <Piano className="w-6 h-6" />
     },
     {
-      title: "Strategic Acceleration",
-      timeframe: "Age 32-36",
-      focus: "Amplifying Impact & Building Legacy",
+      title: "Scaling Era",
+      timeframe: "2034-2039 (Age 28-33)", 
+      focus: "Global Expansion",
       keyActions: [
-        "Take on roles with broader scope and responsibility",
-        "Launch initiatives that create lasting positive change",
-        "Invest significantly in developing others",
-        "Build multiple income streams and investment portfolio"
+        "Franchise piano teaching methodology",
+        "Scale software to global markets",
+        "Establish studios on 3+ continents",
+        "Create teacher training programs"
       ],
-      experiences: ["Personal resilience building", "Mentorship awakening"],
-      values: ["Excellence with Balance", "Integrity Above All"],
-      decisions: ["Strategic career pivot", "Financial independence acceleration"],
+      experiences: ["International cultural immersion", "Leadership through building teams"],
+      values: ["Challenge Makes Us Stronger", "Persistence Wins Everything"],
+      decisions: ["Scale systematically", "Culture-adaptive teaching methods"],
       milestones: [
-        "Reach senior leadership position",
-        "Create measurable positive impact on global scale",
-        "Mentor 10+ professionals to significant career advancement",
-        "Achieve 75% of financial independence goal"
+        "15+ studio locations worldwide",
+        "Platform serves 10,000+ students",
+        "Visited 30+ countries",
+        "Train 100+ piano teachers"
       ],
-      color: "border-purple-400 text-purple-400"
+      color: "border-purple-400 text-purple-400",
+      icon: <Laptop className="w-6 h-6" />
     },
     {
-      title: "Success Realization",
-      timeframe: "Age 36-40",
-      focus: "Living the Vision & Expanding Influence",
+      title: "Freedom Era",
+      timeframe: "2039-2046 (Age 33-40)",
+      focus: "Living the Vision",
       keyActions: [
-        "Optimize for sustainable high performance",
-        "Create platforms for others to succeed",
-        "Balance professional achievement with personal fulfillment",
-        "Plan for next phase of impact beyond 40"
+        "Optimize for maximum freedom",
+        "Perfect nomadic lifestyle systems", 
+        "Focus on cultural exploration",
+        "Mentor next generation"
       ],
-      experiences: ["Integration of all previous learnings"],
-      values: ["All six values working in harmony"],
-      decisions: ["Life integration mastery"],
+      experiences: ["Complete integration of all learnings", "Peak performance systems"],
+      values: ["Challenge Makes Us Stronger", "Persistence Wins Everything"],
+      decisions: ["Freedom over further growth", "Cultural immersion priority"],
       milestones: [
-        "Achieve definition of success across all six pillars",
-        "Establish lasting systems for positive impact",
-        "Complete financial independence",
-        "Create blueprint for sustained success beyond 40"
+        "20+ global studio network",
+        "Complete location independence",
+        "Lived on every continent", 
+        "Global impact through music education"
       ],
-      color: "border-yellow-400 text-yellow-400"
-    }
-  ];
-
-  const synthesisElements = [
-    {
-      title: "The Success Equation",
-      description: "Vision + Values + Experiences + Decisions = Sustainable Success",
-      details: `My vision provides the destination, values serve as the compass, experiences build wisdom, 
-      and strategic decisions create the path. None of these elements work in isolation—they reinforce 
-      each other to create momentum toward meaningful achievement.`
-    },
-    {
-      title: "The Compound Effect",
-      description: "Small, consistent actions aligned with core principles create exponential results",
-      details: `Success at 40 isn't about dramatic leaps—it's about making slightly better decisions 
-      consistently over 15+ years. The relationships I build in my 20s support the opportunities in my 30s. 
-      The skills I develop early enable the leadership roles later.`
-    },
-    {
-      title: "The Integration Challenge",
-      description: "True success requires harmonizing all aspects of life, not optimizing just one",
-      details: `The biggest risk is achieving success in one area at the expense of others. My framework 
-      ensures that professional achievement enhances rather than detracts from personal relationships, 
-      health, and values-based living.`
+      color: "border-yellow-400 text-yellow-400",
+      icon: <Globe className="w-6 h-6" />
     }
   ];
 
   return (
     <div className="space-y-6">
       {showIntro && (
-        <div className="border-l-4 border-amber-400 pl-4">
-          <TypewriterText 
-            text={`THE COMPLETE JOURNEY: HOW IT ALL CONNECTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        <div className="grid md:grid-cols-2 gap-6 items-center">
+          <div className="border-l-4 border-amber-400 pl-4">
+            <TypewriterText 
+              text={`COMPLETE TIMELINE: 2025 → 2046
+━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-This is how my vision, values, experiences, and decisions
-weave together into a coherent path to success at 40.
-It's not just a plan—it's a philosophy for sustainable achievement.`}
-            className="text-amber-400 whitespace-pre-line"
-            speed={25}
+From 19-year-old student to 40-year-old 
+global entrepreneur. Two hobbies become 
+worldwide freedom.
+
+The 21-year journey in four eras.`}
+              className="text-amber-400 whitespace-pre-line"
+              speed={25}
+            />
+          </div>
+          <ImageWithFallback 
+            src="https://images.unsplash.com/photo-1597395247099-ec7f5c18087a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b3JsZCUyMG1hcCUyMHRyYXZlbCUyMGRpZ2l0YWwlMjBub21hZHxlbnwxfHx8fDE3NTg4NzM2NjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="World map journey"
+            className="w-full h-48 object-cover rounded-lg border border-gray-700"
           />
         </div>
       )}
@@ -155,17 +151,17 @@ It's not just a plan—it's a philosophy for sustainable achievement.`}
         <div className="space-y-6">
           <div className="text-center mb-6">
             <TypewriterText 
-              text="The 21 Years of Journey to Success at 40:"
+              text="Four Eras of Success:"
               className="text-green-400 text-lg"
               delay={500}
             />
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {journeyPhases.map((phase, index) => (
               <Card 
                 key={index}
-                className={`bg-gray-900/50 border-gray-700 hover:${phase.color.split(' ')[0]} cursor-pointer transition-all duration-300 ${
+                className={`bg-gray-900/50 border-gray-700 hover:${phase.color.split(' ')[0]} cursor-pointer transition-all ${
                   activePhase === index ? phase.color.split(' ')[0] : ''
                 }`}
                 onClick={() => setActivePhase(activePhase === index ? null : index)}
@@ -173,90 +169,75 @@ It's not just a plan—it's a philosophy for sustainable achievement.`}
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
-                      <div className={`w-12 h-12 rounded-full border-2 ${phase.color} flex items-center justify-center`}>
-                        <span className={`text-lg ${phase.color.split(' ')[1]}`}>{index + 1}</span>
+                      <div className={`w-16 h-16 rounded-full border-2 ${phase.color} flex items-center justify-center bg-black/30`}>
+                        <div className={phase.color.split(' ')[1]}>
+                          {phase.icon}
+                        </div>
                       </div>
                       <div>
                         <CardTitle className={`${phase.color.split(' ')[1]} text-xl`}>
                           {phase.title}
                         </CardTitle>
                         <div className="text-gray-400">{phase.timeframe}</div>
-                        <div className="text-gray-300 text-sm mt-1">{phase.focus}</div>
+                        <div className="text-gray-300 mt-1">{phase.focus}</div>
                       </div>
                     </div>
-                    <ArrowRight className={`w-6 h-6 ${phase.color.split(' ')[1]} ${activePhase === index ? 'rotate-90' : ''} transition-transform`} />
+                    <Plane className={`w-6 h-6 ${phase.color.split(' ')[1]} ${activePhase === index ? 'rotate-90' : ''} transition-transform`} />
                   </div>
                 </CardHeader>
 
                 {activePhase === index && (
                   <CardContent className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-blue-400 text-sm mb-2 flex items-center">
+                          <h4 className="text-blue-400 mb-2 flex items-center">
                             <Target className="w-4 h-4 mr-2" />
                             Key Actions
                           </h4>
-                          <div className="space-y-1">
-                            {phase.keyActions.map((action, idx) => (
-                              <div key={idx} className="flex items-start space-x-2">
-                                <span className="text-green-400 text-xs mt-1">•</span>
-                                <span className="text-gray-300 text-sm">{action}</span>
-                              </div>
-                            ))}
-                          </div>
+                          {phase.keyActions.map((action, idx) => (
+                            <div key={idx} className="flex items-start space-x-2 mb-1">
+                              <span className="text-green-400 mt-1">•</span>
+                              <span className="text-gray-300 text-sm">{action}</span>
+                            </div>
+                          ))}
                         </div>
 
                         <div>
-                          <h4 className="text-purple-400 text-sm mb-2 flex items-center">
-                            <CheckCircle className="w-4 h-4 mr-2" />
-                            Key Milestones
+                          <h4 className="text-purple-400 mb-2 flex items-center">
+                            <Calendar className="w-4 h-4 mr-2" />
+                            Milestones
                           </h4>
-                          <div className="space-y-1">
-                            {phase.milestones.map((milestone, idx) => (
-                              <div key={idx} className="flex items-start space-x-2">
-                                <span className="text-yellow-400 text-xs mt-1">✓</span>
-                                <span className="text-gray-300 text-sm">{milestone}</span>
-                              </div>
-                            ))}
-                          </div>
+                          {phase.milestones.map((milestone, idx) => (
+                            <div key={idx} className="flex items-start space-x-2 mb-1">
+                              <span className="text-yellow-400 mt-1">✓</span>
+                              <span className="text-gray-300 text-sm">{milestone}</span>
+                            </div>
+                          ))}
                         </div>
                       </div>
 
                       <div className="space-y-4">
                         <div>
-                          <h4 className="text-green-400 text-sm mb-2">Leveraged Experiences</h4>
-                          <div className="space-y-1">
-                            {phase.experiences.map((exp, idx) => (
-                              <div key={idx} className="text-gray-300 text-sm">• {exp}</div>
-                            ))}
-                          </div>
+                          <h4 className="text-green-400 mb-2">Values Applied</h4>
+                          {phase.values.map((value, idx) => (
+                            <div key={idx} className="text-gray-300 text-sm mb-1">• {value}</div>
+                          ))}
                         </div>
 
                         <div>
-                          <h4 className="text-orange-400 text-sm mb-2">Active Values</h4>
-                          <div className="space-y-1">
-                            {phase.values.map((value, idx) => (
-                              <div key={idx} className="text-gray-300 text-sm">• {value}</div>
-                            ))}
-                          </div>
-                        </div>
-
-                        <div>
-                          <h4 className="text-red-400 text-sm mb-2">Critical Decisions</h4>
-                          <div className="space-y-1">
-                            {phase.decisions.map((decision, idx) => (
-                              <div key={idx} className="text-gray-300 text-sm">• {decision}</div>
-                            ))}
-                          </div>
+                          <h4 className="text-red-400 mb-2">Key Decisions</h4>
+                          {phase.decisions.map((decision, idx) => (
+                            <div key={idx} className="text-gray-300 text-sm mb-1">• {decision}</div>
+                          ))}
                         </div>
                       </div>
                     </div>
 
                     <div className="pt-4 border-t border-gray-600">
-                      <Progress value={(index + 1) * 25} className="h-2" />
-                      <div className="text-xs text-gray-500 mt-1 text-center">
-                        Progress toward 40: {(index + 1) * 25}%
+                      <Progress value={(index + 1) * 25} className="h-3" />
+                      <div className="text-xs text-gray-500 mt-2 text-center">
+                        Journey Progress: {(index + 1) * 25}% to 2046
                       </div>
                     </div>
                   </CardContent>
@@ -267,77 +248,101 @@ It's not just a plan—it's a philosophy for sustainable achievement.`}
         </div>
       )}
 
-      {showSynthesis && (
+      {showVision && (
         <div className="space-y-6">
           <div className="text-center mb-6">
             <TypewriterText 
-              text="The Integration: How Success Compounds"
-              className="text-amber-300 text-lg"
+              text="2046: Vision Achieved"
+              className="text-amber-300 text-2xl"
               delay={1000}
             />
           </div>
 
-          <div className="space-y-4">
-            {synthesisElements.map((element, index) => (
-              <Card key={index} className="bg-gradient-to-r from-amber-900/20 to-orange-900/20 border border-amber-400/30">
-                <CardHeader>
-                  <CardTitle className="text-amber-300 text-lg">{element.title}</CardTitle>
-                  <div className="text-amber-400 text-sm">{element.description}</div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-300 text-sm leading-relaxed">{element.details}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg p-6">
+            <div className="grid md:grid-cols-2 gap-6 items-center">
+              <div>
+                <h3 className="text-green-400 mb-4 text-xl">Welcome to My 40s!</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  🎹 <span className="text-blue-400">20+ piano studios</span> across 6 continents
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  💻 <span className="text-green-400">Global music platform</span> serving 50,000+ students
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  🌍 <span className="text-purple-400">Complete location freedom</span> - working from anywhere
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  ✈️ <span className="text-yellow-400">Cultural immersion</span> in 50+ countries
+                </p>
+                <p className="text-gray-300 leading-relaxed mt-3">
+                  <span className="text-amber-300">Two hobbies at 19 became global freedom at 40.</span>
+                </p>
+              </div>
+              <ImageWithFallback 
+                src="https://images.unsplash.com/photo-1585816876841-7f1a1a206cae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwY29ubmVjdGlvbiUyMHdvcmxkd2lkZXxlbnwxfHx8fDE3NTg4NzM2NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Global success network"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
           </div>
 
-          <div className="mt-8 p-6 bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg">
-            <h3 className="text-green-400 mb-3 text-lg">Success at 40: The Vision Realized</h3>
-            <p className="text-gray-300 leading-relaxed">
-              By following this integrated approach, my success at 40 won't be accidental or unsustainable. 
-              It will be the natural result of 15+ years of intentional growth, strategic decisions, and 
-              values-based living.
-            </p>
-            <p className="text-gray-300 leading-relaxed mt-3">
-              More importantly, this framework ensures that success enhances rather than diminishes the other 
-              important aspects of life. The person I become on the journey to 40 will be as important as 
-              what I achieve.
-            </p>
-            <p className="text-gray-300 leading-relaxed mt-3">
-              This isn't just a plan for professional success—it's a blueprint for a life well-lived, 
-              relationships well-maintained, and impact well-created. Success at 40 becomes the foundation 
-              for even greater contributions in the decades that follow.
-            </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Card className="bg-blue-900/20 border border-blue-400/30">
+              <CardHeader>
+                <CardTitle className="text-blue-400 flex items-center">
+                  <Piano className="w-5 h-5 mr-2" />
+                  The Formula
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300 text-sm">
+                  <span className="text-amber-300">Challenge + Persistence</span> × 21 years = Global Success
+                </p>
+                <p className="text-gray-300 text-sm mt-2">
+                  Simple values. Consistent action. Extraordinary results.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-green-900/20 border border-green-400/30">
+              <CardHeader>
+                <CardTitle className="text-green-400 flex items-center">
+                  <Globe className="w-5 h-5 mr-2" />
+                  Beyond 2046
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300 text-sm">
+                  This isn't the end—it's the foundation for decades of global impact through music and technology.
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Button 
               onClick={() => onNavigate('vision')}
               className="bg-blue-400/20 border border-blue-400 text-blue-400 hover:bg-blue-400/30"
             >
-              <Target className="w-4 h-4 mr-2" />
-              My Vision
+              Vision
             </Button>
             <Button 
               onClick={() => onNavigate('experiences')}
               className="bg-green-400/20 border border-green-400 text-green-400 hover:bg-green-400/30"
             >
-              <Calendar className="w-4 h-4 mr-2" />
-              Key Experiences
+              Experiences
             </Button>
             <Button 
               onClick={() => onNavigate('values')}
               className="bg-purple-400/20 border border-purple-400 text-purple-400 hover:bg-purple-400/30"
             >
-              <Users className="w-4 h-4 mr-2" />
-              Core Values
+              Values
             </Button>
             <Button 
               onClick={() => onNavigate('decisions')}
               className="bg-yellow-400/20 border border-yellow-400 text-yellow-400 hover:bg-yellow-400/30"
             >
-              <TrendingUp className="w-4 h-4 mr-2" />
-              Critical Decisions
+              Decisions
             </Button>
           </div>
         </div>
