@@ -155,7 +155,7 @@ It's not just a plan—it's a philosophy for sustainable achievement.`}
         <div className="space-y-6">
           <div className="text-center mb-6">
             <TypewriterText 
-              text="The 15-Year Journey to Success at 40:"
+              text="The 21 Years of Journey to Success at 40:"
               className="text-green-400 text-lg"
               delay={500}
             />
