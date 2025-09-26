@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TerminalWindow } from './components/TerminalWindow';
 import { NavigationSystem, Page } from './components/NavigationSystem';
+import { BackButton } from './components/BackButton';
 import { HomePage } from './components/pages/HomePage';
 import { SuccessVisionPage } from './components/pages/SuccessVisionPage';
 import { ExperiencesPage } from './components/pages/ExperiencesPage';
@@ -49,6 +50,11 @@ export default function App() {
               pages={pages}
               currentPage={currentPage}
               onNavigate={handleNavigate}
+            />
+            
+            <BackButton 
+              onNavigate={handleNavigate}
+              currentPage={currentPage}
             />
             
             <div className="min-h-[600px]">

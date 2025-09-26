@@ -9,7 +9,7 @@ export interface Page {
   component: React.ComponentType<any>;
   unlocked?: boolean;
 }
-
+  
 interface NavigationSystemProps {
   pages: Page[];
   currentPage: string;

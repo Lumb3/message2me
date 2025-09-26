@@ -28,25 +28,25 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
 
   const explorationCommands = [
     { 
-      command: 'explore vision', 
+      command: 'explore my vision', 
       description: 'Discover what success means to me at 40',
       action: () => onNavigate('vision'),
       color: 'text-blue-400'
     },
     { 
-      command: 'explore experiences', 
+      command: 'explore my experiences', 
       description: 'Learn about the experiences that shaped my path',
       action: () => onNavigate('experiences'),
       color: 'text-green-400'
     },
     { 
-      command: 'explore values', 
+      command: 'explore my values', 
       description: 'Understand the principles that guide my decisions',
       action: () => onNavigate('values'),
       color: 'text-purple-400'
     },
     { 
-      command: 'explore decisions', 
+      command: 'explore my decisions', 
       description: 'See the critical turning points in my journey',
       action: () => onNavigate('decisions'),
       color: 'text-yellow-400'
@@ -58,9 +58,8 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
       {showWelcome && (
         <div className="border-l-4 border-cyan-400 pl-4">
           <TypewriterText 
-            text={`SCHOLARSHIP PROMPT RESPONSE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+            text={`PROMPT
+━━━━━━
 "Imagine yourself in your 40s, having built a very successful 
 life and career. What does that success look like for you, 
 and what experiences, values, or decisions do you believe 
@@ -74,13 +73,12 @@ will have brought you to that point?"`}
       {showIntro && (
         <div className="bg-gray-900/30 border border-gray-700 rounded-lg p-6">
           <TypewriterText 
-            text={`Welcome to my interactive response. I've structured my answer
+            text={`Welcome to my world! I've structured my answer
 as an explorable terminal interface where you can dive deep into
 different aspects of my vision for success at 40.
 
-This isn't just a written response—it's a journey through my 
-thoughts, values, and the path I envision taking to achieve
-meaningful success.`}
+This isn't just a written response, but it's a journey through my 
+thoughts, values, and the path I envision taking to achieve my dream.`}
             className="text-amber-300 leading-relaxed"
             speed={20}
             delay={1000}
