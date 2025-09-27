@@ -19,9 +19,9 @@ export function ExperiencesPage({
   const [selectedExperience, setSelectedExperience] = useState<number | null>(
     null
   );
-  const [selectedFutureExperience, setSelectedFutureExperience] = useState<number | null>(
-    null
-  );
+  const [selectedFutureExperience, setSelectedFutureExperience] = useState<
+    number | null
+  >(null);
 
   useEffect(() => {
     const timeout1 = setTimeout(() => setShowIntro(true), 500);
@@ -38,15 +38,24 @@ export function ExperiencesPage({
     {
       icon: <Piano className="w-6 h-6" />,
       title: "The Piano Dream Begins",
-      period: "Age 12. Children's Palace of Mongolia (the first piano class)",
+      period: "Age 11. Children's Palace of Mongolia (the first piano class)",
       lesson: "Dreams born from struggle fuel innovation",
-      story: `Sitting in front of a piano for the first time, completely lost. Sheet music looked like alien hieroglyphics. My fingers couldn't find the right keys. Everyone else seemed to "get it" immediately.
+      story: `
+      Sitting in front of a piano for the first time,
+completely lost.
+Sheet music looked like alien hieroglyphics.
+My fingers couldn’t find the right keys.
+Everyone else seemed to "get it" immediately.
 
-I cried that first week. A lot.
+I cried that first week.
+A lot.
 
-But something about those 88 keys called to me. I started dreaming about the day I could play effortlessly, when music would flow from my fingers like magic.
+But something about those 88 keys called to me.
+I began dreaming of the day I could play effortlessly,
+when music would flow from my fingers like magic.
 
-That dream—and all the frustration that came with it—planted the seed for everything I'm building now.`,
+That dream—and every frustration along the way—
+planted the seed for everything I’m building now.`,
       impact:
         "Learned that the biggest problems create the biggest opportunities",
       color: "border-blue-400 text-blue-400",
@@ -58,13 +67,22 @@ That dream—and all the frustration that came with it—planted the seed for ev
       title: "Code Becomes My Superpower",
       period: "Age 16. Nest Academy, Ulaanbaatar",
       lesson: "Technology can solve any problem",
-      story: `Still struggling with piano, but discovered programming. Built my first app—a simple metronome because the physical one was too annoying to use.
+      story: `Still struggling with piano,
+I discovered programming.
+Built my first app—a simple metronome,
+because the physical one was too annoying to use.
 
-Suddenly I realized: I don't have to accept bad tools. I can build better ones.
+Suddenly I realized:
+I don’t have to accept bad tools.
+I can build better ones.
 
-Started coding solutions for every piano problem I faced. Chord progressions? Built an app. Practice tracking? Built an app. Sheet music too hard to read? Started working on that too.
+I started coding solutions for every piano problem I faced.
+Chord progressions? Built an app.
+Practice tracking? Built an app.
+Sheet music too hard to read? Started working on that too.
 
-Code wasn't just a skill—it was my way to fix everything wrong with learning piano.`,
+Code wasn’t just a skill—
+it became my way to fix everything wrong with learning piano.`,
       impact:
         "Discovered that I could build solutions instead of just complaining about problems",
       color: "border-green-400 text-green-400",
@@ -76,13 +94,20 @@ Code wasn't just a skill—it was my way to fix everything wrong with learning p
       title: "The Breakthrough Moment",
       period: "Age 18. Ulaanbaatar Marathon 2024",
       lesson: "Persistence transforms struggle into strength",
-      story: `After 6 years of on-and-off piano learning, something clicked. Not just with piano—with everything.
+      story: `After six years of on-and-off piano learning, something clicked.
+Not just with piano—with everything.
 
-All those hours of struggling taught me how to learn anything. All those coding projects taught me how to build anything. All that frustration taught me exactly what problems needed solving.
+All those hours of struggle taught me how to learn anything.
+All those coding projects taught me how to build anything.
+All that frustration taught me exactly what problems needed solving.
 
-I wasn't behind everyone else. I was ahead. Because I understood the struggle.
+I wasn’t behind everyone else.
+I was ahead.
+Because I understood the struggle.
 
-That's when I knew: I'm not building a business. I'm building the solution to every problem I've ever faced.`,
+That’s when I knew:
+I’m not building a business.
+I’m building the solution to every problem I’ve ever faced.`,
       impact:
         "Realized that my struggles were actually my competitive advantage",
       color: "border-red-400 text-red-400",
@@ -199,7 +224,9 @@ Every problem I faced becomes a feature I'll build.`}
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-green-400 text-xl">Looking Ahead: The Future Vision</h2>
+            <h2 className="text-green-400 text-xl">
+              Looking Ahead: The Future Vision
+            </h2>
             <div className="grid md:grid-cols-1 gap-4">
               {futureExperiences.map((experience, index) => (
                 <Card
@@ -242,7 +269,9 @@ Every problem I faced becomes a feature I'll build.`}
                     <div className="text-gray-400 text-sm">
                       {experience.period}
                     </div>
-                    <div className={`${experience.color.split(" ")[1]} text-sm`}>
+                    <div
+                      className={`${experience.color.split(" ")[1]} text-sm`}
+                    >
                       {experience.lesson}
                     </div>
                   </CardHeader>
@@ -275,7 +304,7 @@ Every problem I faced becomes a feature I'll build.`}
               <h3 className="text-green-400 text-xl">The Foundation is Set</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 12:</span> Piano dream begins
+              <span className="text-amber-300">Age 11:</span> Piano dream begins
               with tears and frustration
             </p>
             <p className="text-gray-300 leading-relaxed">
@@ -292,7 +321,9 @@ Every problem I faced becomes a feature I'll build.`}
               now powers seven years of building.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-indigo-400">Age 40:</span> Mastering the piano-tech vision, creating tools that redefine music learning worldwide.
+              <span className="text-indigo-400">Age 40:</span> Mastering the
+              piano-tech vision, creating tools that redefine music learning
+              worldwide.
             </p>
           </div>
 

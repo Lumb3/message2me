@@ -57,7 +57,7 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
   const explorationCommands = [
     {
       command: "explore my vision",
-      description: "AI piano forged from 10 years of learning struggles",
+      description: "AI piano forged from 8 years of learning struggles",
       action: () => onNavigate("vision"),
       color: "text-blue-400",
     },
@@ -147,7 +147,7 @@ through complex pieces with expert suggestions.`}
               </div>
             </div>
             <TypewriterText
-              text={`From a 12-year-old dreamer, struggling to learn piano,
+              text={`From a 11-year-old dreamer, struggling to learn piano,
 to a 40-year-old creator of the solutions I once wished for.
 
 The future of piano learning starts now.

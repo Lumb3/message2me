@@ -30,14 +30,14 @@ export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
   const myJourney = [
     {
       icon: <Heart className="w-5 h-5" />,
-      period: "2012-2018",
-      ages: "Age 12-18",
+      period: "2018-2024",
+      ages: "Age 11-18",
       phase: "The Struggle & Discovery Years",
       status: "Complete",
       tagline: "Where pain becomes purpose",
       keyMoments: [
-        "Age 12: First piano lesson disaster - couldn't read sheet music, tears everywhere",
-        "Age 13-15: Kept struggling but refused to quit, slowly building resilience",
+        "Age 11: First piano lesson disaster - couldn't read sheet music, tears everywhere",
+        "Age 12-15: Kept struggling but refused to quit, slowly building resilience",
         "Age 16: Discovered programming, built first metronome app from frustration",
         "Age 17: The breakthrough - realized my struggles were actually market research",
         "Age 18: Had my 'aha moment' - I'm going to solve this for everyone"
@@ -80,7 +80,7 @@ This is when I realize: I'm not building hobby projects anymore. I'm building th
       ages: "Age 25-32",
       phase: "The AI Revolution Years", 
       status: "Vision",
-      tagline: "Building the teacher I needed at 12",
+      tagline: "Building the teacher I needed at 11",
       keyMoments: [
         "Age 25: AI piano teacher MVP launches - first breakthrough in music AI",
         "Age 27: Partner with music schools, proven 80% reduction in student dropouts",
@@ -90,7 +90,7 @@ This is when I realize: I'm not building hobby projects anymore. I'm building th
       ],
       story: `This is when my childhood dream becomes reality. The AI piano teacher that understands when you're frustrated, that knows exactly why your fingers aren't cooperating, that never gets impatient with you.
 
-Everything I wished existed when I was 12 is finally real. And it's helping thousands of kids who were exactly like me - the ones who struggle, who feel behind, who almost give up.
+Everything I wished existed when I was 11 is finally real. And it's helping thousands of kids who were exactly like me - the ones who struggle, who feel behind, who almost give up.
 
 Parents start emailing me: 'My daughter actually looks forward to piano practice now.' Teachers tell me: 'I've never seen kids progress this fast.' 
 
@@ -131,10 +131,10 @@ Full circle: from struggling kid to the person who makes sure no kid has to stru
       {showIntro && (
         <div className="border-l-4 border-amber-400 pl-4">
           <TypewriterText 
-            text={`THE COMPLETE JOURNEY: 2012 → 2046
+            text={`THE COMPLETE JOURNEY: 2018 → 2046
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From crying 12-year-old to piano-tech CEO.
+From crying 11-year-old to piano-tech CEO.
 40 years. Four phases. One unshakeable mission.
 
 Every struggle becomes strength. Every problem becomes product.
@@ -264,7 +264,7 @@ The story of how personal pain becomes global solution.`}
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300 text-sm">
-                  Every feature I build, every decision I make - I ask: "Would this have helped 12-year-old me?" 
+                  Every feature I build, every decision I make - I ask: "Would this have helped 11-year-old me?" 
                   That crying kid is still my product manager.
                 </p>
               </CardContent>
