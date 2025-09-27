@@ -53,7 +53,7 @@ export function SuccessVisionPage({
 
   const visionPillars = [
     {
-      icon: <Bot className="w-6 h-6" />,
+      icon: <Bot className="w-10 h-10" />,
       title: "AI Piano Teacher",
       description: "Learns each student's struggles",
       details: `The piano that understands why you're stuck on that one measure.
@@ -61,34 +61,31 @@ export function SuccessVisionPage({
 AI analyzes your playing, identifies exact problems, and creates custom exercises.
 No more "practice more" - it shows you exactly what to fix and how.`,
       color: "border-blue-400 text-blue-400",
-      imageSrc:
-        "https://images.unsplash.com/photo-1636916368580-8f99867e6e14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWFubyUyMG11c2ljJTIwdGVhY2hpbmclMjBnbG9iYWwlMjB3b3JsZHxlbnwxfHx8fDE3NTg4NzM2NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: "assets/image.png",
       imageAlt: "AI Piano Teacher",
     },
     {
-      icon: <Music className="w-6 h-6" />,
+      icon: <Music className="w-10 h-10" />,
       title: "Smart Sheet Music",
       description: "Flips pages, highlights notes",
-      details: `Never lose your place again. Sheet music that follows along.
+      details: `Never lose your place again. Sheet music that follows along when you play the piano.
     
 Auto-scrolls at your tempo. Highlights the next section. 
-Loops difficult parts until you nail them.`,
+Generates a loop for tricky parts until you nail them.`,
       color: "border-green-400 text-green-400",
       imageSrc:
         "https://images.unsplash.com/photo-1652696290920-ee4c836c711e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwbGFwdG9wJTIwY29kaW5nfGVufDF8fHx8MTc1ODg3MzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       imageAlt: "Smart Sheet Music",
     },
     {
-      icon: <Sparkles className="w-6 h-6" />,
+      icon: <Sparkles className="w-10 h-10" />,
       title: "Learning Revolution",
       description: "Weeks, not years to mastery",
-      details: `What took me years to learn, others will master in weeks.
-    
-The company that solves every problem I faced as a struggling 12-year-old.
-Built from frustration. Powered by empathy.`,
+      details:
+        "What took me years to learn, others will master in weeks. The company that solves every problem I faced as a struggling 12-year-old. Built from frustration. Powered by empathy.",
       color: "border-purple-400 text-purple-400",
-      imageSrc:
-        "https://images.unsplash.com/photo-1597395247099-ec7f5c18087a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b3JsZCUyMG1hcCUyMHRyYXZlbCUyMGRpZ2l0YWwlMjBub21hZHxlbnwxfHx8fDE3NTg4NzM2NjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      imageSrc: "https://images.unsplash.com/photo-1597395247099-ec7f5c18087a?crop=entropy&cs=tinysrgb&fit=max&w=600&q=80"
+      ,
       imageAlt: "Learning Revolution",
     },
   ];
@@ -104,14 +101,14 @@ Built from frustration. Powered by empathy.`,
         <div className="grid md:grid-cols-2 gap-6 items-center">
           <div className="border-l-4 border-blue-400 pl-4">
             <TypewriterText
-              text={`MY PIANO-TECH COMPANY (2046)
+              text={`MY PIANO-TECH COMPANY WILL HAVE FOLLWOWING FEATURES (2046)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🤖 AI piano that teaches anyone in weeks
-📝 Smart sheet music that never loses your place  
-✨ Built from every struggle I faced learning piano
+🤖 AI Piano Teacher: Learns your playing, spots mistakes instantly, and guides you to master pieces in weeks.
+📝 Smart Sheet Music: Auto-scrolls with your tempo, highlights tricky notes, and loops difficult sections until perfect.
+✨ Empathy-Driven Design: Built from my own struggles, turning childhood frustration into a smarter, faster way to learn piano.
 
-Turning childhood frustration into global solution.`}
+This piano will be the piano I had been dreaming to have since age 12.`}
               className="text-blue-400 whitespace-pre-line"
               speed={25}
             />
@@ -135,6 +132,7 @@ Turning childhood frustration into global solution.`}
                     ♪ Nocturne In C Sharp Minor
                   </div>
                   <div className="text-gray-400 text-sm">
+                    Enjoy the music 🎹 <br></br>
                     Cover by Erkhembileg
                   </div>
                 </div>
@@ -224,7 +222,7 @@ Turning childhood frustration into global solution.`}
               onClick={() => onNavigate("experiences")}
               className="bg-green-400/20 border border-green-400 text-green-400 hover:bg-green-400/30"
             >
-              My Current Work →
+              Explore experiences →
             </Button>
             <Button
               onClick={() => onNavigate("journey")}

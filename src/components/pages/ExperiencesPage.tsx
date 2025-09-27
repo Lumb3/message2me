@@ -19,6 +19,9 @@ export function ExperiencesPage({
   const [selectedExperience, setSelectedExperience] = useState<number | null>(
     null
   );
+  const [selectedFutureExperience, setSelectedFutureExperience] = useState<number | null>(
+    null
+  );
 
   useEffect(() => {
     const timeout1 = setTimeout(() => setShowIntro(true), 500);
@@ -34,55 +37,76 @@ export function ExperiencesPage({
   const formativeExperiences = [
     {
       icon: <Piano className="w-6 h-6" />,
-      title: "First Piano Lesson",
-      period: "Age 8",
-      lesson: "Complexity yields to practice",
-      story: `Sitting at the piano bench for the first time, staring at black and white keys that seemed like a foreign language. My teacher played a simple melody—it sounded impossible.
+      title: "The Piano Dream Begins",
+      period: "Age 12. Children's Palace of Mongolia (the first piano class)",
+      lesson: "Dreams born from struggle fuel innovation",
+      story: `Sitting in front of a piano for the first time, completely lost. Sheet music looked like alien hieroglyphics. My fingers couldn't find the right keys. Everyone else seemed to "get it" immediately.
 
-"Start with one note," she said.
+I cried that first week. A lot.
 
-That lesson changed everything. Complex music was just simple notes in sequence. Difficult pieces were just easy sections connected. This thinking now applies to everything: complex code, challenging goals, global business plans.
+But something about those 88 keys called to me. I started dreaming about the day I could play effortlessly, when music would flow from my fingers like magic.
 
-One note. One step. One day at a time.`,
+That dream—and all the frustration that came with it—planted the seed for everything I'm building now.`,
       impact:
-        "Learned that mastery comes through deliberate practice and patience",
+        "Learned that the biggest problems create the biggest opportunities",
       color: "border-blue-400 text-blue-400",
       image:
         "https://images.unsplash.com/photo-1636916368580-8f99867e6e14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWFubyUyMG11c2ljJTIwdGVhY2hpbmclMjBnbG9iYWwlMjB3b3JsZHxlbnwxfHx8fDE3NTg4NzM2NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
       icon: <Code className="w-6 h-6" />,
-      title: "First Working Program",
-      period: "Age 14",
-      lesson: "Logic conquers chaos",
-      story: `Hours of frustration debugging my first Python program. Error after error. Nothing worked.
+      title: "Code Becomes My Superpower",
+      period: "Age 16. Nest Academy, Ulaanbaatar",
+      lesson: "Technology can solve any problem",
+      story: `Still struggling with piano, but discovered programming. Built my first app—a simple metronome because the physical one was too annoying to use.
 
-Then suddenly—it ran. A simple calculator, but it worked perfectly.
+Suddenly I realized: I don't have to accept bad tools. I can build better ones.
 
-That moment taught me computers aren't magic. They're logic machines. Any problem can be solved with the right sequence of instructions. This mindset now drives everything: teaching systems, business processes, life optimization.
+Started coding solutions for every piano problem I faced. Chord progressions? Built an app. Practice tracking? Built an app. Sheet music too hard to read? Started working on that too.
 
-If it can be broken down logically, it can be built successfully.`,
-      impact: "Developed systematic thinking and problem decomposition skills",
+Code wasn't just a skill—it was my way to fix everything wrong with learning piano.`,
+      impact:
+        "Discovered that I could build solutions instead of just complaining about problems",
       color: "border-green-400 text-green-400",
       image:
         "https://images.unsplash.com/photo-1652696290920-ee4c836c711e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwbGFwdG9wJTIwY29kaW5nfGVufDF8fHx8MTc1ODg3MzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "First Marathon",
-      period: "Age 17",
-      lesson: "Challenge is what makes us not just physically, but mentally strong",
-      story: `Mile 20. Everything hurt. Mind screaming "STOP."
+      title: "The Breakthrough Moment",
+      period: "Age 18. Ulaanbaatar Marathon 2024",
+      lesson: "Persistence transforms struggle into strength",
+      story: `After 6 years of on-and-off piano learning, something clicked. Not just with piano—with everything.
 
-But I'd trained for this moment—not just physically, but mentally. Months of running when I didn't want to. Getting up early when it was cold. Pushing through when every excuse seemed reasonable.
+All those hours of struggling taught me how to learn anything. All those coding projects taught me how to build anything. All that frustration taught me exactly what problems needed solving.
 
-Crossing that finish line taught me the difference between discomfort and damage. Most limitations are mental. When you train yourself to persist through discomfort, you unlock capabilities you never knew existed.
+I wasn't behind everyone else. I was ahead. Because I understood the struggle.
 
-This lesson powers everything from difficult coding sessions to challenging piano pieces to building global businesses.`,
-      impact: "Discovered that mental resilience is trainable and transferable",
+That's when I knew: I'm not building a business. I'm building the solution to every problem I've ever faced.`,
+      impact:
+        "Realized that my struggles were actually my competitive advantage",
       color: "border-red-400 text-red-400",
       image:
         "https://images.unsplash.com/photo-1758506971667-fbaa8942258a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwbWFyYXRob24lMjBlbmR1cmFuY2UlMjBjaGFsbGVuZ2V8ZW58MXx8fHwxNzU4ODczNjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    },
+  ];
+  // Add this new experience in your page
+  const futureExperiences = [
+    {
+      icon: <Zap className="w-6 h-6" />,
+      title: "Mastering the Piano-Tech Vision",
+      period: "Age 40",
+      lesson: "Long-term persistence shapes legacy",
+      story: `By age 40, decades of piano mastery and coding innovation have culminated in creating tools that redefine music learning worldwide.
+
+Students now learn faster, composers now innovate more freely, and every challenge I faced as a child became the foundation for these solutions.
+
+The dream that started at 12 became a reality, impacting thousands and setting the stage for future generations.`,
+      impact:
+        "Demonstrated that early struggles, combined with relentless learning, can create a lasting legacy",
+      color: "border-indigo-400 text-indigo-400",
+      image:
+        "https://images.unsplash.com/photo-1551836022-d5d88e9218df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80",
     },
   ];
 
@@ -91,13 +115,13 @@ This lesson powers everything from difficult coding sessions to challenging pian
       {showIntro && (
         <div className="border-l-4 border-green-400 pl-4">
           <TypewriterText
-            text={`BUILDING BLOCKS OF SUCCESS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            text={`THE JOURNEY FROM STRUGGLE TO SOLUTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Three experiences. Two values confirmed.
-One path to global freedom.
+Three moments that shaped everything.
+From crying over sheet music to building the future.
 
-Every master was once a beginner.`}
+Every problem I faced becomes a feature I'll build.`}
             className="text-green-400 whitespace-pre-line"
             speed={25}
           />
@@ -106,24 +130,102 @@ Every master was once a beginner.`}
 
       {showExperiences && (
         <div className="space-y-6">
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-stretch">
+          <div className="grid md:grid-cols-3 gap-4">
             {formativeExperiences.map((experience, index) => (
-              <div key={index} className="flex-1 min-w-0 max-w-md mx-auto md:mx-0">
+              <Card
+                key={index}
+                className={`bg-gray-900/50 border-gray-700 hover:${
+                  experience.color.split(" ")[0]
+                } cursor-pointer transition-all ${
+                  selectedExperience === index
+                    ? experience.color.split(" ")[0]
+                    : ""
+                }`}
+                onClick={() =>
+                  setSelectedExperience(
+                    selectedExperience === index ? null : index
+                  )
+                }
+              >
+                <div className="relative">
+                  <ImageWithFallback
+                    src={experience.image}
+                    alt={experience.title}
+                    className="w-full h-40 object-cover rounded-t-lg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-t-lg"></div>
+                  <div
+                    className={`absolute top-3 right-3 p-2 rounded-full bg-black/70 ${
+                      experience.color.split(" ")[1]
+                    }`}
+                  >
+                    {experience.icon}
+                  </div>
+                </div>
+
+                <CardHeader className="pb-3">
+                  <CardTitle
+                    className={`${experience.color.split(" ")[1]} text-lg`}
+                  >
+                    {experience.title}
+                  </CardTitle>
+                  <div className="text-gray-400 text-sm">
+                    {experience.period}
+                  </div>
+                  <div className={`${experience.color.split(" ")[1]} text-sm`}>
+                    {experience.lesson}
+                  </div>
+                </CardHeader>
+
+                {selectedExperience === index && (
+                  <CardContent className="space-y-4 pt-0">
+                    <div className="p-4 bg-black/30 rounded">
+                      <h4 className="text-amber-300 mb-3">The Moment</h4>
+                      <p className="text-gray-300 text-sm leading-relaxed whitespace-pre-line">
+                        {experience.story}
+                      </p>
+                    </div>
+
+                    <div className="p-4 bg-gray-800/30 rounded">
+                      <h4 className="text-green-400 mb-2">Impact Today</h4>
+                      <p className="text-gray-300 text-sm">
+                        {experience.impact}
+                      </p>
+                    </div>
+                  </CardContent>
+                )}
+              </Card>
+            ))}
+          </div>
+
+          <div className="space-y-4">
+            <h2 className="text-green-400 text-xl">Looking Ahead: The Future Vision</h2>
+            <div className="grid md:grid-cols-1 gap-4">
+              {futureExperiences.map((experience, index) => (
                 <Card
-                  className={`flex flex-col h-full bg-gray-900/50 border-gray-700 hover:${
+                  key={index}
+                  className={`bg-gray-900/50 border-gray-700 hover:${
                     experience.color.split(" ")[0]
-                  } cursor-pointer transition-all h-[320px]`}
+                  } cursor-pointer transition-all ${
+                    selectedFutureExperience === index
+                      ? experience.color.split(" ")[0]
+                      : ""
+                  }`}
+                  onClick={() =>
+                    setSelectedFutureExperience(
+                      selectedFutureExperience === index ? null : index
+                    )
+                  }
                 >
-                  {/* Image section - much smaller */}
-                  <div className="relative flex-shrink-0">
+                  <div className="relative">
                     <ImageWithFallback
                       src={experience.image}
                       alt={experience.title}
-                      className="w-full h-20 object-cover rounded-t-lg"
+                      className="w-full h-40 object-cover rounded-t-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-t-lg"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-t-lg"></div>
                     <div
-                      className={`absolute top-2 right-2 p-1.5 rounded-full bg-black/70 ${
+                      className={`absolute top-3 right-3 p-2 rounded-full bg-black/70 ${
                         experience.color.split(" ")[1]
                       }`}
                     >
@@ -131,25 +233,40 @@ Every master was once a beginner.`}
                     </div>
                   </div>
 
-                  {/* Text section - more space now */}
-                  <div className="flex flex-col flex-1 justify-between p-4">
-                    <div className="flex-1">
-                      <h3
-                        className={`text-lg font-semibold mb-2 ${
-                          experience.color.split(" ")[1]
-                        }`}
-                      >
-                        {experience.title}
-                      </h3>
-                      <p className="text-gray-400 text-sm mb-3">{experience.period}</p>
-                      <p className={`${experience.color.split(" ")[1]} text-sm font-medium leading-relaxed`}>
-                        {experience.lesson}
-                      </p>
+                  <CardHeader className="pb-3">
+                    <CardTitle
+                      className={`${experience.color.split(" ")[1]} text-lg`}
+                    >
+                      {experience.title}
+                    </CardTitle>
+                    <div className="text-gray-400 text-sm">
+                      {experience.period}
                     </div>
-                  </div>
+                    <div className={`${experience.color.split(" ")[1]} text-sm`}>
+                      {experience.lesson}
+                    </div>
+                  </CardHeader>
+
+                  {selectedFutureExperience === index && (
+                    <CardContent className="space-y-4 pt-0">
+                      <div className="p-4 bg-black/30 rounded">
+                        <h4 className="text-amber-300 mb-3">The Vision</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed whitespace-pre-line">
+                          {experience.story}
+                        </p>
+                      </div>
+
+                      <div className="p-4 bg-gray-800/30 rounded">
+                        <h4 className="text-green-400 mb-2">Legacy Impact</h4>
+                        <p className="text-gray-300 text-sm">
+                          {experience.impact}
+                        </p>
+                      </div>
+                    </CardContent>
+                  )}
                 </Card>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg p-6">
@@ -158,21 +275,24 @@ Every master was once a beginner.`}
               <h3 className="text-green-400 text-xl">The Foundation is Set</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 8:</span> Piano teaches
-              patience and practice
+              <span className="text-amber-300">Age 12:</span> Piano dream begins
+              with tears and frustration
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 14:</span> Code teaches logic
-              and systems thinking
+              <span className="text-amber-300">Age 16:</span> Code becomes my
+              problem-solving superpower
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 17:</span> Running teaches
-              persistence and mental toughness
+              <span className="text-amber-300">Age 18:</span> Breakthrough:
+              struggle becomes competitive advantage
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-400">Result:</span> By 19, I already
-              have the core skills and mindset for global success. The next 21
-              years will build on this foundation.
+              <span className="text-green-400">Age 19:</span> Building the
+              company that solves every problem I faced. Seven years of struggle
+              now powers seven years of building.
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-3">
+              <span className="text-indigo-400">Age 40:</span> Mastering the piano-tech vision, creating tools that redefine music learning worldwide.
             </p>
           </div>
 

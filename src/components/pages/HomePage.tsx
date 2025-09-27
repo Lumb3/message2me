@@ -140,6 +140,7 @@ through complex pieces with expert suggestions.`}
                 <div>
                   <div className="text-blue-400">♪ Waltz in A Minor</div>
                   <div className="text-gray-400 text-sm">
+                    Enjoy the music 🎹 <br></br>
                     Cover by Erkhembileg
                   </div>
                 </div>
