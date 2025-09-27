@@ -158,7 +158,7 @@ The future of piano learning starts now.
           </div>
           <div className="relative">
             <ImageWithFallback
-              src="assets/myFuture.png"
+              src="public/assets/myFuture.png"
               alt="Future digital world 2046"
               className="w-full h-48 object-cover rounded-lg border border-gray-700"
             />
