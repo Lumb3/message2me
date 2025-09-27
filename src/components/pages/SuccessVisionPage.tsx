@@ -141,7 +141,7 @@ Turning childhood frustration into global solution.`}
               </div>
             </div>
             <ImageWithFallback
-              src="public/assets/piano.png"
+              src="/assets/piano.png"
               alt="Piano-tech innovation"
               className="w-full h-40 object-cover rounded-lg border border-gray-700"
             />
