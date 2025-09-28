@@ -307,7 +307,7 @@ Every problem I faced becomes a feature I have built in my 40s.`}
               struggle becomes competitive advantage
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-300">Age 19:</span> Building the
+              <span className="text-green-300">Age 30:</span> Building the
               company that solves every problem I faced. Seven years of struggle
               now powers seven years of building.
             </p>
