@@ -183,22 +183,20 @@ This is the full story of how I plan to turn childhood struggles into a mission-
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-4">
-   <div className="relative">
-  <ImageWithFallback
-    src={phase.image}
-    alt={phase.phase}
-    className="w-full h-40 md:h-full object-cover rounded-lg"
-  />
+                  <div className="relative">
+                    <ImageWithFallback
+                      src={phase.image}
+                      alt={phase.phase}
+                      className="w-full h-40 md:h-full object-cover rounded-lg"
+                    />
 
-  {/* Tag inside top-left corner of image */}
-  <div className="absolute top-2 left-2 bg-black/60 px-2 py-1 rounded-md">
-    <div className="text-xs md:text-sm font-semibold text-amber-400">
-      {phase.period} | {phase.ages}
-    </div>
-  </div>
-</div>
-
-
+                    {/* Tag inside top-left corner of image */}
+                    <div className="absolute top-2 left-2 bg-black/60 px-2 py-1 rounded-md">
+                      <div className="text-xs md:text-sm font-semibold text-amber-400">
+                        {phase.period} | {phase.ages}
+                      </div>
+                    </div>
+                  </div>
 
                   <div className="md:col-span-2 p-6">
                     <CardHeader className="p-0 mb-4">
