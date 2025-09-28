@@ -51,20 +51,19 @@ export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
         "Age 17: The breakthrough - realized my struggles were actually market research",
         "Age 18: Had my 'aha moment' - I'm going to solve this for everyone",
       ],
-      story: `The piano bench felt too big for me, the sheet music too small. Notes blurred when the tears came, the metronome clicking like a clock that wouldn’t wait. Other kids raced ahead; I stayed stuck at bar seven.
-      
-      But every rough practice was data. Eight years of logging frustration, tiny victories, and the quiet reasons kids quit. I didn’t know it then, but I was doing user research the hard way: living the problem. By eighteen, the question finally formed—if AI can solve everything from search to speech, why not the lonely struggle of learning music?`,
+      story: `The piano bench felt too big, the sheet music too small. Notes blurred when tears came, the metronome ticking like a clock that wouldn’t wait. Other kids raced ahead; I was stuck at bar seven.
+
+Every rough practice was data. Eight years of logging frustration, shivering on my first stage, scared of what might happen when the page turned (as you see in the picture above)—I didn’t know it then, but I was doing user research the hard way: living the problem. By eighteen, the question finally formed: if AI can solve everything from search to speech, why not the lonely struggle of learning music?`,
       impact:
         "Built deep empathy for struggling piano students + discovered my superpower (coding)",
       color: "border-red-400 text-red-400",
-      image:
-        "assets/performance.jpeg",
+      image: "assets/performance.jpeg",
     },
     {
       icon: <Code className="w-5 h-5" />,
       period: "2025-2032",
       ages: "Age 19-25",
-      phase: "The Building Years",
+      phase: "The Learning Years",
       status: "Active",
       tagline: "Turning problems into products",
       keyMoments: [
@@ -74,9 +73,9 @@ export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
         "Age 22: Graduate with working product suite and real customers",
         "Age 23-25: Officially launch Piano-Tech startup, secure funding",
       ],
-      story: `The years when things start to click. I’m no longer just learning — I’m building tools people actually use. Each app shows me what musicians truly need, not just what I assume. A Chrome extension that bookmarks YouTube timestamps sparks feature requests from strangers. A sheet music editor draws testers who say, “This is exactly what I’ve been looking for.”
-      
-This is when I realize: I'm not building hobby projects anymore. I'm building the foundation of my future company.`,
+      story: `At this stage of my life, I am building on every piece of knowledge and experience that will help me create my AI piano teacher.
+For one of my projects, I developed a Chrome extension that saves timestamps of every YouTube video, making it easy to revisit important sections (as shown in the preview above).
+Little did I know, my friend needed this extension. When he said, “This is exactly what I’ve been looking for,” I realized something important: I wasn’t just building hobby projects anymore. I was laying the foundation for my future company.`,
       impact:
         "Proof of concept achieved + real users + sustainable revenue streams",
       color: "border-blue-400 text-blue-400",
@@ -86,9 +85,9 @@ This is when I realize: I'm not building hobby projects anymore. I'm building th
       icon: <Brain className="w-5 h-5" />,
       period: "2025-2032",
       ages: "Age 25-32",
-      phase: "The AI Revolution Years",
+      phase: "The Building Years",
       status: "Vision",
-      tagline: "Building the teacher I needed at 11",
+      tagline: "Building the teacher I needed when I was 11",
       keyMoments: [
         "Age 25: AI piano teacher MVP launches - first breakthrough in music AI",
         "Age 27: Partner with music schools, proven 80% reduction in student dropouts",
@@ -96,11 +95,11 @@ This is when I realize: I'm not building hobby projects anymore. I'm building th
         "Age 30: International expansion, multiple languages supported",
         "Age 32: AI understands musical emotion, not just technique",
       ],
-      story: `This is when my childhood dream becomes reality. The AI piano teacher that understands when you're frustrated, that knows exactly why your fingers aren't cooperating, that never gets impatient with you.
+      story: `At this stage, my childhood dream becomes reality. I begin building the AI piano teacher that provides recommendations
+on playing tempo, musical expression, and automatically flips pages, using all the knowledge I gained from university and my projects.
+This is the moment when everything I wished for at 11 finally exists—and it will help thousands of kids just like me: the ones who struggle, fall behind, or almost give up.
 
-Everything I wished existed when I was 11 is finally real. And it's helping thousands of kids who were exactly like me - the ones who struggle, who feel behind, who almost give up.
-
-Parents start emailing me: 'My daughter actually looks forward to piano practice now.' Teachers tell me: 'I've never seen kids progress this fast.' 
+Parents start emailing me: 'My daughter actually looks forward to piano practice now.' Teachers say: 'I've never seen kids progress this fast.'
 
 That 11-year-old who cried over sheet music finally gets his revenge.`,
       impact: "Revolutionary AI that transforms music education globally",
@@ -145,8 +144,8 @@ Full circle: from struggling kid to the person who makes sure no kid has to stru
             text={`THE COMPLETE JOURNEY: 2018 → 2046
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From 11-year-old struggling at piano to a builder of piano-tech solutions.
-Every struggle plants a seed for the future I want to create.
+From an 11-year-old struggling at the piano to a builder of piano-tech solutions.
+This is the full story of how I plan to turn childhood struggles into a mission-driven company that transforms music education for everyone.
 `}
             className="text-amber-400 whitespace-pre-line"
             speed={25}
@@ -184,18 +183,22 @@ Every struggle plants a seed for the future I want to create.
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="relative">
-                    <ImageWithFallback
-                      src={phase.image}
-                      alt={phase.phase}
-                      className="w-full h-40 md:h-full object-cover rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-lg"></div>
-                    <div className="absolute bottom-3 left-3 z-10 text-white">
-                      <div className="text-sm">{phase.period}</div>
-                      <div className="text-xs opacity-75">{phase.ages}</div>
-                    </div>
-                  </div>
+   <div className="relative">
+  <ImageWithFallback
+    src={phase.image}
+    alt={phase.phase}
+    className="w-full h-40 md:h-full object-cover rounded-lg"
+  />
+
+  {/* Tag inside top-left corner of image */}
+  <div className="absolute top-2 left-2 bg-black/60 px-2 py-1 rounded-md">
+    <div className="text-xs md:text-sm font-semibold text-amber-400">
+      {phase.period} | {phase.ages}
+    </div>
+  </div>
+</div>
+
+
 
                   <div className="md:col-span-2 p-6">
                     <CardHeader className="p-0 mb-4">
