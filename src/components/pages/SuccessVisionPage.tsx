@@ -82,7 +82,7 @@ Generates a loop for tricky parts until you nail them.`,
       title: "Learning Revolution",
       description: "Weeks, not years to mastery",
       details:
-        "What took me years to learn, others will master in weeks. The company that solves every problem I faced as a struggling 12-year-old. Built from frustration. Powered by empathy.",
+        "What took me years to learn, others will master in weeks. The company that solves every problem I faced as a struggling 11-year-old. Built from frustration. Powered by empathy.",
       color: "border-purple-400 text-purple-400",
       imageSrc: "https://images.unsplash.com/photo-1597395247099-ec7f5c18087a?crop=entropy&cs=tinysrgb&fit=max&w=600&q=80"
       ,
@@ -108,7 +108,7 @@ Generates a loop for tricky parts until you nail them.`,
 📝 Smart Sheet Music: Auto-scrolls with your tempo, highlights tricky notes, and loops difficult sections until perfect.
 ✨ Empathy-Driven Design: Built from my own struggles, turning childhood frustration into a smarter, faster way to learn piano.
 
-This piano will be the piano I had been dreaming to have since age 12.`}
+This piano will be the piano I had been dreaming to have since age 11.`}
               className="text-blue-400 whitespace-pre-line"
               speed={25}
             />

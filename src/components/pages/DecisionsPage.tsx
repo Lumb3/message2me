@@ -122,13 +122,14 @@ Focus shifts from growth to optimization and lifestyle design.`,
       {showIntro && (
         <div className="border-l-4 border-yellow-400 pl-4">
           <TypewriterText 
-            text={`KEY DECISIONS FOR GLOBAL SUCCESS
+            text={`KEY DECISIONS FOR MY SUCCESS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Four strategic choices that turn hobbies into freedom.
-Each decision builds on the last.
+Turning the dream I had at age 11 into a concrete goal: creating a piano-tech company.
 
-Success isn't luck—it's intentional decisions.`}
+Along the way, I made four key decisions that transformed my hobbies into a thriving business.
+
+I believe planning accounts for 50% of success. The other 50% is execution.`}
             className="text-yellow-400 whitespace-pre-line"
             speed={25}
           />

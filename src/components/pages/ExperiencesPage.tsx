@@ -118,11 +118,17 @@ I’m building the solution to every problem I’ve ever faced.`,
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Exploring the Piano-Tech Vision",
-      period: "Age 40. The future of piano-tech mastery",
+      period: "Age 40. Piano-Tech Startup",
       lesson: "Long-term persistence shapes legacy",
-      story: `By age 40, decades of piano mastery and coding innovation ...`,
+      story: `Decades of piano practice and coding innovation have fused into creation.
+The tools I dreamed of at 12 are now real—
+helping students learn faster, composers create more freely,
+and turning every childhood struggle into a solution that reaches the world.
+
+Music flows seamlessly. Learning feels effortless.
+Challenges that once felt impossible now inspire innovation.`,
       impact:
-        "Demonstrated that early struggles, combined with relentless learning, can create a lasting legacy",
+        "What started as frustration became a foundation.",
       color: "border-indigo-400 text-pink-400",
       image: "assets/MIDI.jpeg",
     },
@@ -306,8 +312,8 @@ Every problem I faced becomes a feature I have built in my 40s.`}
               now powers seven years of building.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-indigo-400">Age 40:</span> Mastering the
-              piano-tech vision, creating tools that redefine music learning
+              <span className="text-indigo-400">Age 40:</span> Exploring the
+              piano-tech vision, creating tools that redefine a new way of music learning
               worldwide.
             </p>
           </div>
