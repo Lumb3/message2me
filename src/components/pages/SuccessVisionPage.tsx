@@ -56,10 +56,11 @@ export function SuccessVisionPage({
       icon: <Bot className="w-10 h-10" />,
       title: "AI Piano Teacher",
       description: "Learns each student's struggles",
-      details: `The piano that understands why you're stuck on that one measure.
-    
-AI analyzes your playing, identifies exact problems, and creates custom exercises.
-No more "practice more" - it shows you exactly what to fix and how.`,
+      details: `Adjusting tempo, pausing at the right spots, and interpreting music notation are major challenges for beginners without a skilled teacher (I'm a self-learner).  
+I aim to build a piano that understands exactly why a student is stuck on a measure and provides guidance based on their playing data.
+
+The AI analyzes performance, identifies specific issues, and generates personalized exercises.  
+No vague "practice more" advice —– it shows exactly what to fix`,
       color: "border-blue-400 text-blue-400",
       imageSrc: "assets/image.png",
       imageAlt: "AI Piano Teacher",
@@ -68,10 +69,11 @@ No more "practice more" - it shows you exactly what to fix and how.`,
       icon: <Music className="w-10 h-10" />,
       title: "Smart Sheet Music",
       description: "Flips pages, highlights notes",
-      details: `Never lose your place again. Sheet music that follows along when you play the piano.
-    
-Auto-scrolls at your tempo. Highlights the next section. 
-Generates a loop for tricky parts until you nail them.`,
+      details: `Manually turning pages while playing often made me lose my place.  
+This smart sheet music flips pages automatically as you play.
+
+It auto-scrolls at your tempo, highlights upcoming sections,  
+and loops difficult parts until you master them.`,
       color: "border-green-400 text-green-400",
       imageSrc:
         "https://images.unsplash.com/photo-1652696290920-ee4c836c711e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwbGFwdG9wJTIwY29kaW5nfGVufDF8fHx8MTc1ODg3MzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -82,7 +84,10 @@ Generates a loop for tricky parts until you nail them.`,
       title: "Learning Revolution",
       description: "Weeks, not years to mastery",
       details:
-        "What took me years to learn, others will master in weeks. The company that solves every problem I faced as a struggling 11-year-old. Built from frustration. Powered by empathy.",
+        `Mastering a single piano piece can take a year or more, depending on its complexity.  
+What took me years to learn, others will now master in weeks.  
+This company solves every problem I faced in my 11-year-old begginner.
+Built from frustration. Powered by empathy.`,
       color: "border-purple-400 text-purple-400",
       imageSrc: "https://images.unsplash.com/photo-1597395247099-ec7f5c18087a?crop=entropy&cs=tinysrgb&fit=max&w=600&q=80"
       ,

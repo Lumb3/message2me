@@ -32,7 +32,7 @@ export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
       icon: <Heart className="w-5 h-5" />,
       period: "2018-2024",
       ages: "Age 11-18",
-      phase: "The Struggle & Discovery Years",
+      phase: "The Discovery Years",
       status: "Complete",
       tagline: "Where pain becomes purpose",
       keyMoments: [
@@ -46,7 +46,7 @@ export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
 
 I didn't know it then, but I was conducting the most thorough user research possible: living the problem daily for 6 years. Understanding every frustration, every small victory, every reason kids quit piano.
 
-By 18, I realized something powerful: my struggles weren't weaknesses. They were my competitive advantage.`,
+By 18, I began thinking: AI solves so many problems today—why not apply it to music learning?`,
       impact: "Built deep empathy for struggling piano students + discovered my superpower (coding)",
       color: "border-red-400 text-red-400",
       image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGVldCUyMG11c2ljJTIwcGlhbm8lMjBkaWdpdGFsfGVufDF8fHx8MTc1ODg3MzY2N3ww&ixlib=rb-4.1.0&q=80&w=400"
@@ -132,15 +132,11 @@ Full circle: from struggling kid to the person who makes sure no kid has to stru
         <div className="border-l-4 border-amber-400 pl-4">
           <TypewriterText 
             text={`THE COMPLETE JOURNEY: 2018 → 2046
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From crying 11-year-old to piano-tech CEO.
-40 years. Four phases. One unshakeable mission.
-
-Every struggle becomes strength. Every problem becomes product.
-Every tear becomes the foundation for someone else's joy.
-
-The story of how personal pain becomes global solution.`}
+From 11-year-old struggling at piano to a builder of piano-tech solutions.
+Every struggle plants a seed for the future I want to create.
+`}
             className="text-amber-400 whitespace-pre-line"
             speed={25}
           />
@@ -310,7 +306,7 @@ The story of how personal pain becomes global solution.`}
                 <span className="text-blue-400"> Zero dropouts.</span> <span className="text-amber-300"> Pure musical joy.</span>
               </p>
               <p className="text-green-400">
-                That crying 12-year-old finally got the teacher he needed. And now, every kid like him does too. ✨
+                That 11-year-old kid finally got the teacher he needed. And now, every kid like him does too. ✨
               </p>
             </div>
             
