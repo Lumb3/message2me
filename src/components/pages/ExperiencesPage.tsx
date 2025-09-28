@@ -3,7 +3,7 @@ import { TypewriterText } from "../TypewriterText";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import { Piano, Code, Zap, Target } from "lucide-react";
+import { Piano, Code, Play, Zap, Pause, Target } from "lucide-react";
 
 interface ExperiencesPageProps {
   onNavigate: (pageId: string) => void;
@@ -59,13 +59,12 @@ planted the seed for everything I’m building now.`,
       impact:
         "Learned that the biggest problems create the biggest opportunities",
       color: "border-blue-400 text-blue-400",
-      image:
-        "https://images.unsplash.com/photo-1636916368580-8f99867e6e14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWFubyUyMG11c2ljJTIwdGVhY2hpbmclMjBnbG9iYWwlMjB3b3JsZHxlbnwxfHx8fDE3NTg4NzM2NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "assets/pianist_image.png",
     },
     {
       icon: <Code className="w-6 h-6" />,
       title: "Code Becomes My Superpower",
-      period: "Age 16. Nest Academy, Ulaanbaatar",
+      period: "Age 16. Kids Code Academy, Ulaanbaatar",
       lesson: "Technology can solve any problem",
       story: `Still struggling with piano,
 I discovered programming.
@@ -86,8 +85,7 @@ it became my way to fix everything wrong with learning piano.`,
       impact:
         "Discovered that I could build solutions instead of just complaining about problems",
       color: "border-green-400 text-green-400",
-      image:
-        "https://images.unsplash.com/photo-1652696290920-ee4c836c711e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwbGFwdG9wJTIwY29kaW5nfGVufDF8fHx8MTc1ODg3MzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "assets/github.png",
     },
     {
       icon: <Zap className="w-6 h-6" />,
@@ -119,19 +117,14 @@ I’m building the solution to every problem I’ve ever faced.`,
   const futureExperiences = [
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Mastering the Piano-Tech Vision",
-      period: "Age 40",
+      title: "Exploring the Piano-Tech Vision",
+      period: "Age 40. The future of piano-tech mastery",
       lesson: "Long-term persistence shapes legacy",
-      story: `By age 40, decades of piano mastery and coding innovation have culminated in creating tools that redefine music learning worldwide.
-
-Students now learn faster, composers now innovate more freely, and every challenge I faced as a child became the foundation for these solutions.
-
-The dream that started at 12 became a reality, impacting thousands and setting the stage for future generations.`,
+      story: `By age 40, decades of piano mastery and coding innovation ...`,
       impact:
         "Demonstrated that early struggles, combined with relentless learning, can create a lasting legacy",
-      color: "border-indigo-400 text-indigo-400",
-      image:
-        "https://images.unsplash.com/photo-1551836022-d5d88e9218df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80",
+      color: "border-indigo-400 text-pink-400",
+      image: "assets/MIDI.jpeg",
     },
   ];
 
@@ -146,7 +139,7 @@ The dream that started at 12 became a reality, impacting thousands and setting t
 Three moments that shaped everything.
 From crying over sheet music to building the future.
 
-Every problem I faced becomes a feature I'll build.`}
+Every problem I faced becomes a feature I have built in my 40s.`}
             className="text-green-400 whitespace-pre-line"
             speed={25}
           />
@@ -172,7 +165,7 @@ Every problem I faced becomes a feature I'll build.`}
                   )
                 }
               >
-                <div className="relative">
+                <div className="relative bg-black">
                   <ImageWithFallback
                     src={experience.image}
                     alt={experience.title}
@@ -194,7 +187,7 @@ Every problem I faced becomes a feature I'll build.`}
                   >
                     {experience.title}
                   </CardTitle>
-                  <div className="text-gray-400 text-sm">
+                  <div className="text-blue-400 text-sm">
                     {experience.period}
                   </div>
                   <div className={`${experience.color.split(" ")[1]} text-sm`}>
@@ -222,11 +215,7 @@ Every problem I faced becomes a feature I'll build.`}
               </Card>
             ))}
           </div>
-
           <div className="space-y-4">
-            <h2 className="text-green-400 text-xl">
-              Looking Ahead: The Future Vision
-            </h2>
             <div className="grid md:grid-cols-1 gap-4">
               {futureExperiences.map((experience, index) => (
                 <Card
@@ -261,17 +250,13 @@ Every problem I faced becomes a feature I'll build.`}
                   </div>
 
                   <CardHeader className="pb-3">
-                    <CardTitle
-                      className={`${experience.color.split(" ")[1]} text-lg`}
-                    >
+                    <CardTitle className="text-blue-400 text-lg">
                       {experience.title}
                     </CardTitle>
                     <div className="text-gray-400 text-sm">
                       {experience.period}
                     </div>
-                    <div
-                      className={`${experience.color.split(" ")[1]} text-sm`}
-                    >
+                    <div className="text-blue-400 text-sm">
                       {experience.lesson}
                     </div>
                   </CardHeader>
@@ -301,7 +286,7 @@ Every problem I faced becomes a feature I'll build.`}
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
               <Target className="w-6 h-6 text-green-400" />
-              <h3 className="text-green-400 text-xl">The Foundation is Set</h3>
+              <h3 className="text-green-300 text-xl">The Foundation is Set</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
               <span className="text-amber-300">Age 11:</span> Piano dream begins
@@ -316,7 +301,7 @@ Every problem I faced becomes a feature I'll build.`}
               struggle becomes competitive advantage
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-400">Age 19:</span> Building the
+              <span className="text-green-300">Age 19:</span> Building the
               company that solves every problem I faced. Seven years of struggle
               now powers seven years of building.
             </p>
