@@ -351,7 +351,7 @@ This is the full story of how I plan to turn childhood struggles into a mission-
 
           <div className="text-center">
             <div className="bg-gradient-to-r from-amber-400/10 to-orange-400/10 border border-amber-400/30 rounded-lg p-6 mb-6">
-              <h3 className="text-amber-400 mb-3">2046: The Dream Realized</h3>
+              <h3 className="text-amber-400 mb-3">2046: The Dream I will be achieved</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 I wake up in Vienna (or maybe Kyoto - I choose freely now) and
                 check my dashboard:

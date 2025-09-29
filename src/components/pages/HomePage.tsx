@@ -96,11 +96,8 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Every key pressed and every line of code written
-brought me closer to my dream: building a piano-tech future.
-
-By 40, I'll launch a piano-tech company with an AI-powered piano that 
-teaches anyone in weeks, flips notes automatically, and guides players 
-through complex pieces with expert suggestions.`}
+brought me closer to my dream: building MY DREAM PIANO – AriaNova.
+`}
             className="text-cyan-400 whitespace-pre-line"
             speed={25}
           />
@@ -150,7 +147,7 @@ through complex pieces with expert suggestions.`}
               text={`From a 11-year-old dreamer, struggling to learn piano,
 to a 40-year-old creator of the solutions I once wished for.
 
-The future of piano learning starts now.
+The future of piano learning starts from here.
 `}
               className="text-amber-300 leading-relaxed"
               speed={20}

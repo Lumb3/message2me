@@ -42,7 +42,7 @@ export function ValuesPage({ onNavigate, onExplored }: ValuesPageProps) {
 
 By 40, this value will have built unshakeable mental toughness.`,
       decisionFramework:
-        "When choosing paths, I ask: 'Which option will make me stronger?'",
+        "When choosing paths, I ask: 'Which option will make me both mentally and physically stronger?'",
       color: "border-red-400 text-red-400",
       image:
       "assets/running.jpeg",
@@ -50,7 +50,7 @@ By 40, this value will have built unshakeable mental toughness.`,
     {
       icon: <Piano className="w-8 h-8" />,
       title: "Persistence Wins Everything",
-      subtitle: "Sticking to goals no matter what obstacles appear",
+      subtitle: "Sticking to your goals even when everything is against you.",
       description: "I don't accept 'giving up' as an option",
       principles: [
         "Goals are non-negotiable destinations",
@@ -62,7 +62,7 @@ By 40, this value will have built unshakeable mental toughness.`,
       realWorldApplication: `This value drives my daily piano practice, coding study, and running routine. When motivation fades, persistence carries me forward. When others give up, I keep going.
 
 My global piano empire and location-independent career will be built on 20+ years of persistent daily action.`,
-      decisionFramework: "Before quitting anything, I ask: 'Is that it?'",
+      decisionFramework: "When I start thinking about stopping in the middle of a run or quitting anything, I ask myself: 'Is that it?'",
       color: "border-blue-400 text-blue-400",
       image:
         "assets/circuit.jpeg",
@@ -102,7 +102,7 @@ My global piano empire and location-independent career will be built on 20+ year
 Two core principles drive everything I do.
 Simple. Powerful. Proven through action.
 
-From age 19 to 40—these values never change.`}
+From age 19 to 40—these values will be the foundation of my success.`}
             className="text-purple-400 whitespace-pre-line flex-1"
             speed={25}
           />
@@ -221,9 +221,9 @@ From age 19 to 40—these values never change.`}
             </h3>
             <p className="text-gray-300 leading-relaxed">
               <span className="text-amber-300">Why just two values?</span>{" "}
-              Because clarity creates power. These two principles have guided
-              every major decision since age 19. They're simple enough to
-              remember in pressure moments, deep enough to build a life on.
+              Because clarity creates power. These two principles have guided—and will continue 
+              to guide—every major decision since I was 19. They're simple enough to remember 
+              in high-pressure moments, yet deep enough to build a life on.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
               <span className="text-amber-300">By 2046:</span> 21 years of

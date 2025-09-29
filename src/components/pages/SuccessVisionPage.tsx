@@ -56,10 +56,10 @@ export function SuccessVisionPage({
       icon: <Bot className="w-10 h-10" />,
       title: "AI Piano Teacher",
       description: "Learns each student's struggles",
-      details: `Adjusting tempo, pausing at the right spots, and interpreting music notation are major challenges for beginners without a skilled teacher (I'm a self-learner).  
-I aim to build a piano that understands exactly why a student is stuck on a measure and provides guidance based on their playing data.
+      details: `Adjusting tempo, pausing at the right spots, and interpreting music notation are major challenges for beginners without a skilled teacher.  
+AriaNova understands exactly why a student is stuck on a measure and provides guidance based on their playing data.
 
-The AI analyzes performance, identifies specific issues, and generates personalized exercises.  
+Using AI, it analyzes performance, spots specific issues, and generates personalized exercises.
 No vague "practice more" advice —– it shows exactly what to fix`,
       color: "border-blue-400 text-blue-400",
       imageSrc: "assets/image.png",
@@ -82,15 +82,12 @@ and loops difficult parts until you master them.`,
     {
       icon: <Sparkles className="w-10 h-10" />,
       title: "Learning Revolution",
-      description: "Weeks, not years to mastery",
-      details:
-        `Mastering a single piano piece can take a year or more, depending on its complexity.  
-What took me years to learn, others will now master in weeks.  
-This company solves every problem I faced in my 11-year-old begginner.
-Built from frustration. Powered by empathy.`,
+      description: "A month, not years to mastery",
+      details: `Having a structured learning plan is crucial—trust me, I learned this the hard way after five years of pounding keys like a caffeinated squirrel, occasionally staring at the piano wondering if it was mocking me.  
+      But with this feature, AriaNova cooks up a personalized plan based on your skill and goals, letting you reach mastery in a month—or even a few weeks—without the squirrel-level chaos.`,
       color: "border-purple-400 text-purple-400",
-      imageSrc: "https://images.unsplash.com/photo-1597395247099-ec7f5c18087a?crop=entropy&cs=tinysrgb&fit=max&w=600&q=80"
-      ,
+      imageSrc:
+        "assets/calendar.jpeg",
       imageAlt: "Learning Revolution",
     },
   ];
@@ -106,14 +103,16 @@ Built from frustration. Powered by empathy.`,
         <div className="grid md:grid-cols-2 gap-6 items-center">
           <div className="border-l-4 border-blue-400 pl-4">
             <TypewriterText
-              text={`MY PIANO-TECH COMPANY WILL HAVE FOLLWOWING FEATURES (2046)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+              text={`AriaNova (2046)
+━━━━━━━━━━━━━━━
+AriaNova is the digital piano at the heart of my future company. "Aria" means solo piece, and "Nova" means new.
+I’ve dreamed of building it since age 11, inspired by struggles as a self-taught pianist, wishing to 
+have private tutor, note flipper, and practice coach all in one.
 
-🤖 AI Piano Teacher: Learns your playing, spots mistakes instantly, and guides you to master pieces in weeks.
-📝 Smart Sheet Music: Auto-scrolls with your tempo, highlights tricky notes, and loops difficult sections until perfect.
-✨ Empathy-Driven Design: Built from my own struggles, turning childhood frustration into a smarter, faster way to learn piano.
-
-This piano will be the piano I had been dreaming to have since age 11.`}
+Three innovations define it:
+🤖 AI Piano Teacher: Adapts to your playing and spots on every mistakes.
+📝 Smart Sheet Music: Auto-scrolls and highlights tricky notes.
+✨ Intuitive Learning: Turns piano struggles into a smooth, “wait, that was easy?” experience.`}
               className="text-blue-400 whitespace-pre-line"
               speed={25}
             />
@@ -209,16 +208,16 @@ This piano will be the piano I had been dreaming to have since age 11.`}
               </h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 12:</span> Crying over sheet
-              music I couldn't understand
+              <span className="text-amber-300">Age 11:</span> Crying over sheet music I couldn't understand, 
+              wishing I had someone to guide me.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 19:</span> Building the tools
+              <span className="text-amber-300">Age 25:</span> Building the tools
               I wish existed back then
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-400">Age 40:</span> Every struggling
-              piano student has the AI teacher I never had.
+              <span className="text-green-400">Age 40:</span> Every struggling piano 
+              student now has the AriaNova I never did.
             </p>
           </div>
 
