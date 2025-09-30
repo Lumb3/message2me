@@ -51,9 +51,7 @@ export function JourneyPage({ onNavigate, onExplored }: JourneyPageProps) {
         "Age 17: The breakthrough - realized my struggles were actually market research",
         "Age 18: Had my 'aha moment' - I'm going to solve this for everyone",
       ],
-      story: `The piano bench felt too big, the sheet music too small. Notes blurred when tears came, the metronome ticking like a clock that wouldn’t wait. Other kids raced ahead; I was stuck at bar seven.
-
-Every rough practice was data. Eight years of logging frustration, shivering on my first stage, scared of what might happen when the page turned (as you see in the picture above)—I didn’t know it then, but I was doing user research the hard way: living the problem. By eighteen, the question finally formed: if AI can solve everything from search to speech, why not the lonely struggle of learning music?`,
+      story: `This part will be`,
       impact:
         "Built deep empathy for struggling piano students + discovered my superpower (coding)",
       color: "border-red-400 text-red-400",
@@ -144,7 +142,7 @@ Full circle: from struggling kid to the person who makes sure no kid has to stru
             text={`THE COMPLETE JOURNEY: 2018 → 2046
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From an 11-year-old struggling at the piano to a builder of piano-tech solutions.
+From an 11-year-old struggling at the piano to the founder of AriaNova.
 This is the full story of how I plan to turn childhood struggles into a mission-driven company that transforms music education for everyone.
 `}
             className="text-amber-400 whitespace-pre-line"

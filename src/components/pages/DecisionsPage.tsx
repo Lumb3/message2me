@@ -37,15 +37,15 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
       It will also strengthen the communication and leadership skills I’ll need for my future piano-tech company.`,
       tradeoffs: {
         shortTerm:
-          "Miss traditional music career path, less prestige initially",
+          "Miss traditional music career path and probably stumble through early business fails 😅",
         longTerm:
-          "Build business skills, create scalable income, develop global network",
+          "Build business skills, create scalable income, learn by teaching",
       },
       successMetrics: [
-        "Build student base of 50+ students by age 22",
+        "Build student base of 50+ students by age 23",
         "Develop unique teaching methodology",
         "Create first digital course by age 24",
-        "Open second location by age 25",
+        "Open second location by age 26",
       ],
       contingencyPlan: `If local teaching market saturates, I'll pivot to online teaching and international expansion earlier than planned.`,
       valueAlignment: [
@@ -56,22 +56,25 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
     },
     {
       icon: <Laptop className="w-6 h-6" />,
-      title: "Code for Freedom",
+      title: "Try, Fail, Repeat",
       timeframe: "Ages 18-30",
-      decisionPoint: "Specialize in remote-friendly programming skills",
-      reasoning: `Focus on building knowledge for my future company—app creation, web development, and electronics. These skills will form the backbone of creating my dream piano.
-
-I’ll develop the technology that powers my own music education empire while also freelancing for others.`,
+      decisionPoint: "Continuos learning and building journey",
+      reasoning: `This is the epic trial-and-error stage of my life—think of it as a coding-and-circuits training montage. 
+Whether I'm building weird software nobody asked for, circuits that shock me more than inspire me, 
+or diving into audio technology research for the ultimate AriaNova piano, 
+every glorious fail is secretly leveling me up. 
+Future me will thank me... or at least have epic stories and a working digital piano to show for it.`,
       tradeoffs: {
-        shortTerm: "Intense learning curve, long hours coding + teaching",
+        shortTerm:
+          "Climbing the 'oops-I-broke-it' ladder: try, crash, laugh, try again 😅",
         longTerm:
-          "Complete location freedom, high income potential, unique skill combination",
+          "Eventually unlock the legendary achievement: an AriaNova digital piano that actually works (and maybe even sounds amazing!)",
       },
       successMetrics: [
-        "Master 3+ programming languages by age 22",
-        "Build first music education app by age 24",
-        "Earn $50K+ annually from coding by age 26",
-        "Create platform used by 1,000+ musicians",
+        "Successfully debug a program without losing my mind 🧠💥",
+        "Make a circuit that doesn’t electrocute anyone ⚡😅",
+        "Launch first functional music education app that actually solves page turning problem",
+        "Leverage the app’s success to firmly establish AriaNova in the market",
       ],
       contingencyPlan: `If music tech market becomes too competitive, I'll pivot to general software development while maintaining music teaching.`,
       valueAlignment: [
@@ -82,21 +85,22 @@ I’ll develop the technology that powers my own music education empire while al
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "Global Over Local",
+      title: "The Establishment of AriaNova company",
       timeframe: "Ages 26-36",
-      decisionPoint: "Expand internationally instead of deepening locally",
-      reasoning: `Once I have proven systems, I'll replicate them globally rather than just growing bigger in one location. This creates the foundation for the nomadic lifestyle I want.
+      decisionPoint: "Create my company, and expand internationally",
+      reasoning: `Once my systems are tested and proven, I'll replicate them across borders instead of stacking everything in one place. 
+This gives me the nomadic lifestyle I want while also turning music education into a worldwide adventure. 
 
-Each new country teaches me new approaches to music education and business.`,
+Every new country adds fresh perspectives on teaching, culture, and business that no single market could ever provide.`,
       tradeoffs: {
         shortTerm: "Complex international logistics, cultural learning curves",
         longTerm:
-          "True global freedom, diverse income streams, cultural richness",
+          "Achieve real global freedom, multiple income streams, and a truly diverse musical community",
       },
       successMetrics: [
         "Open studios in 5 countries by age 30",
         "Spend 3+ months yearly in different countries",
-        "Build international team of teachers",
+        "Build a strong international team of teachers and collaborators for my company",
         "Platform serves students from 20+ countries",
       ],
       contingencyPlan: `If international expansion proves too complex, I'll focus on online global reach first, then physical expansion.`,
@@ -111,7 +115,7 @@ Each new country teaches me new approaches to music education and business.`,
       title: "Systems Over Hours",
       timeframe: "Ages 30-40",
       decisionPoint: "Build systems that work without my constant presence",
-      reasoning: `By age 30, I need to transition from doing everything myself to building systems and teams that can operate independently. This enables the freedom I want in my 40s.
+      reasoning: `By age 30, I will transition from doing everything myself to building systems and teams that can operate independently. This enables the freedom I want in my 40s.
 
 Focus shifts from growth to optimization and lifestyle design.`,
       tradeoffs: {
@@ -123,7 +127,7 @@ Focus shifts from growth to optimization and lifestyle design.`,
       successMetrics: [
         "Business runs 3+ months without my presence",
         "80% of income is passive or managed by others",
-        "Team of 10+ teachers worldwide",
+        "Team of 100+ teachers worldwide",
         "Automated student acquisition systems",
       ],
       contingencyPlan: `If delegation doesn't work, I'll focus on higher-level strategy and reduce the number of locations to maintain quality.`,
@@ -140,14 +144,15 @@ Focus shifts from growth to optimization and lifestyle design.`,
       {showIntro && (
         <div className="border-l-4 border-yellow-400 pl-4">
           <TypewriterText
-            text={`KEY DECISIONS FOR MY SUCCESS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            text={`KEY DECISIONS THE BOOM OF AriaNova
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The biggest decision of my life came the moment I decided to turn my DREAM into my life goal and purpose.
 
-Turning the dream I had at age 11 into a concrete goal: creating a piano-tech company.
+Along the way, these four decisions became the foundation that kept me, at 11 years old, sitting behind the piano despite wanting to quit a million times
+–– shaping the future entrepreneur behind AriaNova.
 
-Along the way, I made four key decisions that transformed my hobbies into a thriving business.
-
-I believe planning accounts for 50% of success. The other 50% is execution.`}
+These decisions taught me that success is 50% planning and 50% execution: 
+you need both a clear plan and the persistence to carry it out.`}
             className="text-yellow-400 whitespace-pre-line"
             speed={25}
           />
@@ -223,7 +228,7 @@ I believe planning accounts for 50% of success. The other 50% is execution.`}
                     </div>
 
                     <div className="p-4 bg-gray-800/30 rounded">
-                      <h4 className="text-amber-300 mb-2">Success Markers</h4>
+                      <h4 className="text-amber-300 mb-2">XP Checkpoints</h4>
                       {decision.successMetrics.map((metric, idx) => (
                         <div
                           key={idx}

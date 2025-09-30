@@ -86,8 +86,7 @@ and loops difficult parts until you master them.`,
       details: `Having a structured learning plan is crucial—trust me, I learned this the hard way after five years of pounding keys like a caffeinated squirrel, occasionally staring at the piano wondering if it was mocking me.  
       But with this feature, AriaNova cooks up a personalized plan based on your skill and goals, letting you reach mastery in a month—or even a few weeks—without the squirrel-level chaos.`,
       color: "border-purple-400 text-purple-400",
-      imageSrc:
-        "assets/calendar.jpeg",
+      imageSrc: "assets/calendar.jpeg",
       imageAlt: "Learning Revolution",
     },
   ];
@@ -208,16 +207,16 @@ Three innovations define it:
               </h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 11:</span> Crying over sheet music I couldn't understand, 
-              wishing I had someone to guide me.
+              <span className="text-amber-300">Age 11:</span> Crying over sheet
+              music I couldn't understand, wishing I had someone to guide me.
             </p>
             <p className="text-gray-300 leading-relaxed">
               <span className="text-amber-300">Age 25:</span> Building the tools
               I wish existed back then
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-400">Age 40:</span> Every struggling piano 
-              student now has the AriaNova I never did.
+              <span className="text-green-400">Age 40:</span> Every struggling
+              piano student now has the AriaNova I never did.
             </p>
           </div>
 

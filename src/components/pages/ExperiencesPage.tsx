@@ -51,8 +51,7 @@ I cried that first week.
 A lot.
 
 But something about those 88 keys called to me.
-I began dreaming of the day I could play effortlessly,
-when music would flow from my fingers like magic.
+I began dreaming of the day I could play effortlessly, when music would flow from my fingers like magic.
 
 That dream—and every frustration along the way—
 planted the seed for everything I’m building now.`,
@@ -77,7 +76,7 @@ I can build better ones.
 
 I started coding solutions for every piano problem I faced.
 Chord progressions? Built an app.
-Practice tracking? Built an app.
+Needed a portable metronome? Built a website.
 Sheet music too hard to read? Started working on that too.
 
 Code wasn’t just a skill—
@@ -90,22 +89,23 @@ it became my way to fix everything wrong with learning piano.`,
     {
       icon: <Zap className="w-6 h-6" />,
       title: "The Breakthrough Moment",
-      period: "Age 18. Ulaanbaatar Marathon 2024",
+      period: "Age 18. Ulaanbaatar Marathon 2024 (50th place)",
       lesson: "Persistence transforms struggle into strength",
-      story: `After six years of on-and-off piano learning, something clicked.
-Not just with piano—with everything.
+      story: `After six years of on-and-off piano learning, something clicked—
+not just with piano, but with life itself.
 
-All those hours of struggle taught me how to learn anything.
+Like a marathon, every struggle was another mile.
+All those hours of practice taught me how to learn anything.
 All those coding projects taught me how to build anything.
-All that frustration taught me exactly what problems needed solving.
+All that frustration showed me exactly which problems needed solving.
 
 I wasn’t behind everyone else.
-I was ahead.
-Because I understood the struggle.
+I was pacing differently.
+And because I understood the struggle, I could go the distance.
 
 That’s when I knew:
-I’m not building a business.
-I’m building the solution to every problem I’ve ever faced.`,
+I’m not just building a business.
+I’m running toward the solution to every problem I’ve ever faced.`,
       impact:
         "Realized that my struggles were actually my competitive advantage",
       color: "border-red-400 text-red-400",
@@ -121,14 +121,13 @@ I’m building the solution to every problem I’ve ever faced.`,
       period: "Age 40. Piano-Tech Startup",
       lesson: "Long-term persistence shapes legacy",
       story: `Decades of piano practice and coding innovation have fused into creation.
-The tools I dreamed of at 12 are now real—
+The tools I dreamed of at 11 are now real—
 helping students learn faster, composers create more freely,
 and turning every childhood struggle into a solution that reaches the world.
 
 Music flows seamlessly. Learning feels effortless.
 Challenges that once felt impossible now inspire innovation.`,
-      impact:
-        "What started as frustration became a foundation.",
+      impact: "What started as frustration became a foundation.",
       color: "border-indigo-400 text-pink-400",
       image: "assets/MIDI.jpeg",
     },
@@ -142,10 +141,11 @@ Challenges that once felt impossible now inspire innovation.`,
             text={`THE JOURNEY FROM STRUGGLE TO SOLUTION
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Three moments that shaped everything.
-From crying over sheet music to building the future.
+Three defining moments shaped my path to building AriaNova—each challenge
+eventually became the blueprint for a stronger, smarter piano company. 
 
-Every problem I faced becomes a feature I have built in my 40s.`}
+By my 40s, every struggle has transformed into a feature that powers a 
+globally recognized AriaNova.`}
             className="text-green-400 whitespace-pre-line"
             speed={25}
           />
@@ -313,8 +313,8 @@ Every problem I faced becomes a feature I have built in my 40s.`}
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
               <span className="text-indigo-400">Age 40:</span> Exploring the
-              piano-tech vision, creating tools that redefine a new way of music learning
-              worldwide.
+              piano-tech vision, creating tools that redefine a new way of music
+              learning worldwide.
             </p>
           </div>
 
