@@ -7,7 +7,7 @@ import { SuccessVisionPage } from './components/pages/SuccessVisionPage';
 import { ExperiencesPage } from './components/pages/ExperiencesPage';
 import { ValuesPage } from './components/pages/ValuesPage';
 import { DecisionsPage } from './components/pages/DecisionsPage';
-import { JourneyPage } from './components/pages/JourneyPage';
+
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -19,7 +19,6 @@ export default function App() {
     { id: 'experiences', name: 'Key Experiences', path: 'experiences', description: 'Formative moments that shaped my path', component: ExperiencesPage },
     { id: 'values', name: 'Core Values', path: 'values', description: 'Principles that guide my decisions', component: ValuesPage },
     { id: 'decisions', name: 'Critical Decisions', path: 'decisions', description: 'Turning points that will define my journey', component: DecisionsPage },
-    { id: 'journey', name: 'The Journey', path: 'journey', description: 'How it all connects together', component: JourneyPage }
   ];
 
   const handleSectionExplored = (sectionId: string) => {

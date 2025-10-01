@@ -69,7 +69,7 @@ export function NavigationSystem({ pages, currentPage, onNavigate }: NavigationS
   return (
     <div className="mb-6">
       <div className="flex items-center space-x-2 mb-4">
-        <span className="text-blue-400">navigator@success:</span>
+        <span className="text-blue-400">navigator@success-<span className='text-green-400'>top-menu</span>:</span>
         <span className="text-amber-300">~/{currentPageData?.path || 'home'}</span>
         <span className="text-green-400">$</span>
         <input
@@ -91,7 +91,7 @@ export function NavigationSystem({ pages, currentPage, onNavigate }: NavigationS
           />
           <div className="text-gray-300 text-sm space-y-1 mt-2">
             <div><span className="text-green-400">ls</span> - List all available modules</div>
-            <div><span className="text-green-400">cd [module]</span> - Navigate to module</div>
+            <div><span className="text-green-400">cd [<span className='text-amber-400'>module</span>]</span> - Navigate to module</div>
             <div><span className="text-green-400">clear</span> - Clear this help menu</div>
             <div><span className="text-green-400">help</span> - Show this help menu</div>
             <div><span className="text-green-400">whoami</span> - Get to know more about me</div>
