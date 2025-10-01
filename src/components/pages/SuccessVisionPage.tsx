@@ -101,19 +101,31 @@ and loops difficult parts until you master them.`,
       {showIntro && (
         <div className="grid md:grid-cols-2 gap-6 items-center">
           <div className="border-l-4 border-blue-400 pl-4">
-            <TypewriterText
-              text={`AriaNova (2046)
-━━━━━━━━━━━━━━━
-AriaNova is the digital piano at the heart of my future company. "Aria" means solo piece, and "Nova" means new.
-I’ve dreamed of building it since age 11, inspired by struggles as a self-taught pianist, wishing to 
-have private tutor, note flipper, and practice coach all in one.
+            <h1
+              className="text-cyan-400 tracking-widest drop-shadow-[0_0_30px_rgba(0,255,255,0.8)]"
+              style={{ fontSize: "3rem" }}
+            >
+              AriaNova(2046)
+            </h1>
 
-Three innovations define it:
-🤖 AI Piano Teacher: Adapts to your playing and spots on every mistakes.
-📝 Smart Sheet Music: Auto-scrolls and highlights tricky notes.
-✨ Intuitive Learning: Turns piano struggles into a smooth, “wait, that was easy?” experience.`}
-              className="text-blue-400 whitespace-pre-line"
-              speed={25}
+            {/* Sub-header */}
+            <div
+              className="font-semibold mt-2 tracking-wide bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 text-transparent bg-clip-text"
+              style={{ fontSize: "1.5rem" }}
+            >
+              Where Music Meets Innovation
+            </div>
+
+            {/* Meaning explanation */}
+            <div className="flex items-center gap-2 text-amber-300 text-lg border-l-2 border-amber-400 pl-4 mt-3">
+              <span className="italic text-white">Aria</span> = melody
+              <span className="text-gray-500 mx-1">|</span>
+              <span className="italic text-white">Nova</span> = futuristic
+            </div>
+            <TypewriterText text="The word Aria means
+             
+            "
+            
             />
           </div>
           <div className="space-y-4">
@@ -228,10 +240,10 @@ Three innovations define it:
               Explore experiences →
             </Button>
             <Button
-              onClick={() => onNavigate("journey")}
+              onClick={() => onNavigate("decisions")}
               className="bg-amber-400/20 border border-amber-400 text-amber-400 hover:bg-amber-400/30"
             >
-              Complete Timeline →
+              Explore decisions →
             </Button>
           </div>
         </div>

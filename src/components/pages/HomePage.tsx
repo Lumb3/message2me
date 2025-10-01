@@ -324,7 +324,14 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                 Some images that envision the future, like the one above, were
                 generated with{" "}
                 <span className="text-yellow-400 font-mono">AI</span>, but the
-                entire website was hand-coded, line by line.
+                entire website was hand-coded, line by line. Check{" "}
+                <a
+                  href="https://github.com/Lumb3/message2me"
+                  className="text-purple-400"
+                >
+                  this website
+                </a>{" "}
+                to see the source code.
               </span>
             </p>
           </div>
@@ -369,7 +376,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                         {cmd.description}
                       </div>
                       <div className="text-green-400 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-                        <span>▸</span> Press Enter to Execute
+                        <span>▸</span> Click to Visit
                       </div>
                     </div>
                   </div>

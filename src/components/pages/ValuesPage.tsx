@@ -248,12 +248,6 @@ From age 19 to 40—these values will be the foundation of my success.`}
             >
               Key Decisions →
             </Button>
-            <Button
-              onClick={() => onNavigate("journey")}
-              className="bg-amber-400/20 border border-amber-400 text-amber-400 hover:bg-amber-400/30"
-            >
-              Complete Journey →
-            </Button>
           </div>
         </div>
       )}
