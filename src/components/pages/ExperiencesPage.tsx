@@ -3,7 +3,7 @@ import { TypewriterText } from "../TypewriterText";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import { Piano, Code, Play, Zap, Pause, Target } from "lucide-react";
+import { Piano, Play, Zap, Pause, Target } from "lucide-react";
 
 interface ExperiencesPageProps {
   onNavigate: (pageId: string) => void;
@@ -37,97 +37,70 @@ export function ExperiencesPage({
   const formativeExperiences = [
     {
       icon: <Piano className="w-6 h-6" />,
-      title: "The Piano Dream Begins",
-      period: "Age 11. Children's Palace of Mongolia (the first piano class)",
-      lesson: "Dreams born from struggle fuel innovation",
+      title: "Discovering the Piano",
+      period: "Age 11. Children's Palace of Mongolia",
+      lesson: "Early struggles develop resilience",
       story: `
-      Sitting in front of a piano for the first time,
-completely lost.
-Sheet music looked like alien hieroglyphics.
-My fingers couldn’t find the right keys.
-Everyone else seemed to "get it" immediately.
+Sitting in front of the piano for the first time was overwhelming.
+Sheet music seemed impossible to read.
+Fingers could not find the keys, and frustration led to tears.
 
-I cried that first week.
-A lot.
-
-But something about those 88 keys called to me.
-I began dreaming of the day I could play effortlessly, when music would flow from my fingers like magic.
-
-That dream—and every frustration along the way—
-planted the seed for everything I’m building now.`,
+Over time, persistence allowed small victories to turn into progress.
+This early challenge taught patience, discipline, and the value of consistent effort.`,
       impact:
-        "Learned that the biggest problems create the biggest opportunities",
+        "Learned that dedication and perseverance turn challenges into growth",
       color: "border-blue-400 text-blue-400",
       image: "assets/pianist_image.png",
     },
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Code Becomes My Superpower",
+      icon: <Play className="w-6 h-6" />,
+      title: "Learning Problem-Solving",
       period: "Age 16. Kids Code Academy, Ulaanbaatar",
-      lesson: "Technology can solve any problem",
-      story: `Still struggling with piano,
-I discovered programming.
-Built my first app—a simple metronome,
-because the physical one was too annoying to use.
+      lesson: "Creativity and initiative solve challenges",
+      story: `Programming became a tool for understanding and solving problems.
+Rather than accepting obstacles, I learned to break them down,
+analyze them, and find practical solutions.
 
-Suddenly I realized:
-I don’t have to accept bad tools.
-I can build better ones.
-
-I started coding solutions for every piano problem I faced.
-Chord progressions? Built an app.
-Needed a portable metronome? Built a website.
-Sheet music too hard to read? Started working on that too.
-
-Code wasn’t just a skill—
-it became my way to fix everything wrong with learning piano.`,
+These skills strengthened my approach to learning piano and other complex tasks,
+showing that persistence paired with strategy leads to results.`,
       impact:
-        "Discovered that I could build solutions instead of just complaining about problems",
+        "Developed independent problem-solving skills and creative thinking",
       color: "border-green-400 text-green-400",
       image: "assets/github.png",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "The Breakthrough Moment",
-      period: "Age 18. Ulaanbaatar Marathon 2024 (50th place)",
-      lesson: "Persistence transforms struggle into strength",
-      story: `After six years of on-and-off piano learning, something clicked—
-not just with piano, but with life itself.
+      title: "Realizing Growth Through Effort",
+      period: "Age 18. Personal Milestone",
+      lesson: "Struggle transforms into strength",
+      story: `Years of practice and learning culminated in a moment of clarity.
+Challenges that once seemed insurmountable became stepping stones.
+I realized progress comes not from talent alone, but from consistent effort and reflection.
 
-Like a marathon, every struggle was another mile.
-All those hours of practice taught me how to learn anything.
-All those coding projects taught me how to build anything.
-All that frustration showed me exactly which problems needed solving.
-
-I wasn’t behind everyone else.
-I was pacing differently.
-And because I understood the struggle, I could go the distance.
-
-That’s when I knew:
-I’m not just building a business.
-I’m running toward the solution to every problem I’ve ever faced.`,
+This understanding motivated me to take on greater challenges with confidence.`,
       impact:
-        "Realized that my struggles were actually my competitive advantage",
+        "Recognized personal growth as the foundation for future success",
       color: "border-red-400 text-red-400",
       image:
         "https://images.unsplash.com/photo-1758506971667-fbaa8942258a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwbWFyYXRob24lMjBlbmR1cmFuY2UlMjBjaGFsbGVuZ2V8ZW58MXx8fHwxNzU4ODczNjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
   ];
-  // Add this new experience in your page
+
   const futureExperiences = [
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Exploring the Piano-Tech Vision",
-      period: "Age 40. Piano-Tech Startup",
-      lesson: "Long-term persistence shapes legacy",
-      story: `Decades of piano practice and coding innovation have fused into creation.
-The tools I dreamed of at 11 are now real—
-helping students learn faster, composers create more freely,
-and turning every childhood struggle into a solution that reaches the world.
+      title: "Applying Skills for Impact",
+      period: "Age 40. Lifelong Learning",
+      lesson: "Persistence and knowledge create contribution",
+      story: `Years of dedication to learning and problem-solving are now applied
+to helping others overcome challenges.
+The lessons from early struggles guide mentorship, community engagement,
+and fostering learning environments where students can thrive.
 
-Music flows seamlessly. Learning feels effortless.
-Challenges that once felt impossible now inspire innovation.`,
-      impact: "What started as frustration became a foundation.",
+Success is measured not only by personal achievement, but by the
+opportunities created for others to grow and succeed.`,
+      impact:
+        "Transforming personal experiences into tools for community impact",
       color: "border-indigo-400 text-pink-400",
       image: "assets/MIDI.jpeg",
     },
@@ -138,14 +111,15 @@ Challenges that once felt impossible now inspire innovation.`,
       {showIntro && (
         <div className="border-l-4 border-green-400 pl-4">
           <TypewriterText
-            text={`THE JOURNEY FROM STRUGGLE TO SOLUTION
+            text={`THE JOURNEY OF GROWTH AND IMPACT
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Three defining moments shaped my path to building AriaNova—each challenge
-eventually became the blueprint for a stronger, smarter piano company. 
+Three key experiences shaped my path: each challenge became a lesson
+that strengthened perseverance, creativity, and the ability to contribute
+meaningfully to others.
 
-By my 40s, every struggle has transformed into a feature that powers a 
-globally recognized AriaNova.`}
+By learning from struggle, I am prepared to make a positive impact
+through scholarship and community engagement.`}
             className="text-green-400 whitespace-pre-line"
             speed={25}
           />
@@ -193,12 +167,8 @@ globally recognized AriaNova.`}
                   >
                     {experience.title}
                   </CardTitle>
-                  <div className="text-blue-400 text-sm">
-                    {experience.period}
-                  </div>
-                  <div className={`${experience.color.split(" ")[1]} text-sm`}>
-                    {experience.lesson}
-                  </div>
+                  <div className="text-gray-400 text-sm">{experience.period}</div>
+                  <div className="text-blue-400 text-sm">{experience.lesson}</div>
                 </CardHeader>
 
                 {selectedExperience === index && (
@@ -212,15 +182,14 @@ globally recognized AriaNova.`}
 
                     <div className="p-4 bg-gray-800/30 rounded">
                       <h4 className="text-green-400 mb-2">Impact Today</h4>
-                      <p className="text-gray-300 text-sm">
-                        {experience.impact}
-                      </p>
+                      <p className="text-gray-300 text-sm">{experience.impact}</p>
                     </div>
                   </CardContent>
                 )}
               </Card>
             ))}
           </div>
+
           <div className="space-y-4">
             <div className="grid md:grid-cols-1 gap-4">
               {futureExperiences.map((experience, index) => (
@@ -259,12 +228,8 @@ globally recognized AriaNova.`}
                     <CardTitle className="text-blue-400 text-lg">
                       {experience.title}
                     </CardTitle>
-                    <div className="text-gray-400 text-sm">
-                      {experience.period}
-                    </div>
-                    <div className="text-blue-400 text-sm">
-                      {experience.lesson}
-                    </div>
+                    <div className="text-gray-400 text-sm">{experience.period}</div>
+                    <div className="text-blue-400 text-sm">{experience.lesson}</div>
                   </CardHeader>
 
                   {selectedFutureExperience === index && (
@@ -278,9 +243,7 @@ globally recognized AriaNova.`}
 
                       <div className="p-4 bg-gray-800/30 rounded">
                         <h4 className="text-green-400 mb-2">Legacy Impact</h4>
-                        <p className="text-gray-300 text-sm">
-                          {experience.impact}
-                        </p>
+                        <p className="text-gray-300 text-sm">{experience.impact}</p>
                       </div>
                     </CardContent>
                   )}
@@ -292,29 +255,27 @@ globally recognized AriaNova.`}
           <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 border border-green-400/30 rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
               <Target className="w-6 h-6 text-green-400" />
-              <h3 className="text-green-300 text-xl">The Foundation is Set</h3>
+              <h3 className="text-green-300 text-xl">Foundation of Growth</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 11:</span> Piano dream begins
-              with tears and frustration
+              <span className="text-amber-300">Age 11:</span> Learned patience
+              and perseverance through early piano struggles.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 16:</span> Code becomes my
-              problem-solving superpower
+              <span className="text-amber-300">Age 16:</span> Developed problem-solving
+              skills and creative thinking.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 18:</span> Breakthrough:
-              struggle becomes competitive advantage
+              <span className="text-amber-300">Age 18:</span> Recognized that effort
+              and reflection lead to meaningful growth.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-300">Age 30:</span> Building the
-              company that solves every problem I faced. Seven years of struggle
-              now powers seven years of building.
+              <span className="text-green-300">Age 30:</span> Applied lessons to help
+              others and contribute to community.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-indigo-400">Age 40:</span> Exploring the
-              piano-tech vision, creating tools that redefine a new way of music
-              learning worldwide.
+              <span className="text-indigo-400">Age 40:</span> Continuing lifelong learning,
+              turning experience into tools that support others’ growth.
             </p>
           </div>
 

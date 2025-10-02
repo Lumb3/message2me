@@ -17,6 +17,7 @@ export function SuccessVisionPage({
   const [showIntro, setShowIntro] = useState(false);
   const [showVisions, setShowVisions] = useState(false);
   const [activeVision, setActiveVision] = useState<number | null>(null);
+  const [showAbout, setShowAbout] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -56,48 +57,44 @@ export function SuccessVisionPage({
       icon: <Bot className="w-10 h-10" />,
       title: "AI Piano Teacher",
       description: "Learns each student's struggles",
-      details: `Adjusting tempo, pausing at the right spots, and interpreting music notation are major challenges for beginners without a skilled teacher.  
-AriaNova understands exactly why a student is stuck on a measure and provides guidance based on their playing data.
+      details: `Adjusting tempo, pausing at the right spots, and interpreting music notation are major challenges for beginners without a skilled teacher.
+  AriaNova understands exactly why a student is stuck on a measure and provides guidance based on their playing data.
 
-Using AI, it analyzes performance, spots specific issues, and generates personalized exercises.
-No vague "practice more" advice —– it shows exactly what to fix`,
+  Using AI, it analyzes performance, spots specific issues, and generates personalized exercises.
+  No vague "practice more" advice —– it shows exactly what to fix`,
       color: "border-blue-400 text-blue-400",
-      imageSrc: "assets/image.png",
       imageAlt: "AI Piano Teacher",
     },
     {
       icon: <Music className="w-10 h-10" />,
       title: "Smart Sheet Music",
       description: "Flips pages, highlights notes",
-      details: `Manually turning pages while playing often made me lose my place.  
-This smart sheet music flips pages automatically as you play.
+      details: `Manually turning pages while playing often made me lose my place.
+  This smart sheet music flips pages automatically as you play.
 
-It auto-scrolls at your tempo, highlights upcoming sections,  
-and loops difficult parts until you master them.`,
+  It auto-scrolls at your tempo, highlights upcoming sections,
+  and loops difficult parts until you master them.`,
       color: "border-green-400 text-green-400",
-      imageSrc:
-        "https://images.unsplash.com/photo-1652696290920-ee4c836c711e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwbGFwdG9wJTIwY29kaW5nfGVufDF8fHx8MTc1ODg3MzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       imageAlt: "Smart Sheet Music",
     },
     {
       icon: <Sparkles className="w-10 h-10" />,
       title: "Learning Revolution",
       description: "A month, not years to mastery",
-      details: `Having a structured learning plan is crucial—trust me, I learned this the hard way after five years of pounding keys like a caffeinated squirrel, occasionally staring at the piano wondering if it was mocking me.  
-      But with this feature, AriaNova cooks up a personalized plan based on your skill and goals, letting you reach mastery in a month—or even a few weeks—without the squirrel-level chaos.`,
+      details: `Having a structured learning plan is crucial—trust me, I learned this the hard way after five years of pounding keys like a caffeinated squirrel, occasionally staring at the piano wondering if it was mocking me.
+        But with this feature, AriaNova cooks up a personalized plan based on your skill and goals, letting you reach mastery in a month—or even a few weeks—without the squirrel-level chaos.`,
       color: "border-purple-400 text-purple-400",
-      imageSrc: "assets/calendar.jpeg",
       imageAlt: "Learning Revolution",
     },
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* **AUDIO INTEGRATION POINT 5**: Vision page audio */}
       <audio ref={audioRef} onEnded={() => setIsPlaying(false)}>
         <source src="/audio/Nocturne_in_C_Sharp_Minor_2.m4a" type="audio/mp4" />
       </audio>
-
+      <div className="flex flex-col space-y-12"></div>
       {showIntro && (
         <div className="grid md:grid-cols-2 gap-6 items-center">
           <div className="border-l-4 border-blue-400 pl-4">
@@ -122,11 +119,6 @@ and loops difficult parts until you master them.`,
               <span className="text-gray-500 mx-1">|</span>
               <span className="italic text-white">Nova</span> = futuristic
             </div>
-            <TypewriterText text="The word Aria means
-             
-            "
-            
-            />
           </div>
           <div className="space-y-4">
             {/* **AUDIO INTEGRATION POINT 6**: Vision demo audio */}
@@ -161,6 +153,59 @@ and loops difficult parts until you master them.`,
           </div>
         </div>
       )}
+      {showAbout && (
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-900/80 rounded-3xl p-8 shadow-xl border border-cyan-400/30 bg-gradient-to-br from-gray-900/80 to-black/60 backdrop-blur-md">
+            <div className="space-y-6 text-gray-200 leading-relaxed">
+              <div
+                className="font-semibold mt-2 tracking-wide bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 text-transparent bg-clip-text"
+                style={{ fontSize: "1.5rem" }}
+              >
+                The Story Behind AriaNova
+              </div>
+
+              <p className="text-lg">
+                It started with an{" "}
+                <span className="text-cyan-500">11-year-old</span> who loved
+                music but struggled with everything else.
+              </p>
+
+              <p>
+                Practice sessions felt like{" "}
+                <span className="text-amber-300">endless guessing games</span>.
+                Was I playing it right? Why did that chord sound off? The sheet
+                music would slip just as I found my rhythm. My teacher's
+                guidance was helpful, but{" "}
+                <span className="text-cyan-300">limited to once a week</span>.
+              </p>
+
+              <p>
+                Between lessons, I was alone—no feedback, no structure, no one
+                to flip the pages when my hands were busy. Just me, the piano,
+                and a mountain of{" "}
+                <span className="text-purple-300">frustration</span>.
+              </p>
+
+              <p className="pt-4 border-t border-gray-700/50">
+                Years later, I realized:{" "}
+                <span className="text-green-300">
+                  what if the piano itself could be the mentor?
+                </span>
+              </p>
+
+              <p className="text-xl text-amber-200 pt-4">
+                <span className="text-cyan-400">
+                  From these challenges came the vision for AriaNova
+                </span>
+                —a whole new way to learn piano. Not cold technology, but a{" "}
+                <span className="text-amber-300">warm companion</span> that
+                understands your struggles because it was built from them.
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      )}
 
       {showVisions && (
         <div className="space-y-6">
@@ -178,11 +223,8 @@ and loops difficult parts until you master them.`,
                 }
               >
                 <div className="relative">
-                  <ImageWithFallback
-                    src={pillar.imageSrc}
-                    alt={pillar.title}
-                    className="w-full h-48 object-cover rounded-t-lg"
-                  />
+                  {/* Only render image if it exists */}
+                
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-t-lg"></div>
                   <div
                     className={`absolute top-2 right-2 p-2 rounded-full bg-black/50 ${

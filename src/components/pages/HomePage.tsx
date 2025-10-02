@@ -334,6 +334,14 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                 to see the source code.
               </span>
             </p>
+            <p className="flex items-start gap-2">
+              <span className="text-cyan-400 font-mono flex-shrink-0">4.</span>
+              <span>
+                This website is intended for viewing on a
+                <span className="text-blue-400"> computer/laptop </span>{" "}
+                only.
+              </span>
+            </p>
           </div>
         </div>
       )}
