@@ -39,14 +39,18 @@ export function ExperiencesPage({
       icon: <Piano className="w-6 h-6" />,
       title: "Discovering the Piano",
       period: "Age 11. Children's Palace of Mongolia",
-      lesson: "Early struggles develop resilience",
+      lesson: "Early struggles build resilience",
       story: `
-Sitting in front of the piano for the first time was overwhelming.
-Sheet music seemed impossible to read.
-Fingers could not find the keys, and frustration led to tears.
+The first time I sat at a piano, I was completely adrift.  
+Sheet music looked like a secret code I wasn’t meant to read.  
+Watching countless Youtube tutorials were helpless.
 
-Over time, persistence allowed small victories to turn into progress.
-This early challenge taught patience, discipline, and the value of consistent effort.`,
+That first week was like a battle.  
+A hard one.  
+
+And yet, something in those 88 keys kept pulling me back.  
+Every wrong note, every stumble, was quietly shaping the very features  
+that would one day live within AriaNova`,
       impact:
         "Learned that dedication and perseverance turn challenges into growth",
       color: "border-blue-400 text-blue-400",
@@ -54,32 +58,35 @@ This early challenge taught patience, discipline, and the value of consistent ef
     },
     {
       icon: <Play className="w-6 h-6" />,
-      title: "Learning Problem-Solving",
+      title: "Found my Passion",
       period: "Age 16. Kids Code Academy, Ulaanbaatar",
       lesson: "Creativity and initiative solve challenges",
-      story: `Programming became a tool for understanding and solving problems.
-Rather than accepting obstacles, I learned to break them down,
-analyze them, and find practical solutions.
-
-These skills strengthened my approach to learning piano and other complex tasks,
-showing that persistence paired with strategy leads to results.`,
+      story: `
+Programming began to feel like another kind of music,  
+where logic and rhythm wove together in harmony.  
+What started at eleven, fumbling through piano keys,  
+evolved into a vision: technology and piano united.  
+AriaNova was no longer just a dream –– it became the path I knew I had to follow.`,
       impact:
-        "Developed independent problem-solving skills and creative thinking",
+        "Discovered my passion to connect music and technology",
       color: "border-green-400 text-green-400",
       image: "assets/github.png",
     },
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Realizing Growth Through Effort",
-      period: "Age 18. Personal Milestone",
+      period: "Age 18. Ulaanbaatar Marathon 2024 (50th place)",
       lesson: "Struggle transforms into strength",
-      story: `Years of practice and learning culminated in a moment of clarity.
-Challenges that once seemed insurmountable became stepping stones.
-I realized progress comes not from talent alone, but from consistent effort and reflection.
-
-This understanding motivated me to take on greater challenges with confidence.`,
+      story: `
+Like a marathon, every struggle was another mile.  
+Late nights, wrong notes, broken code—  
+each setback carried me forward.  
+Progress came not from talent alone,  
+but from persistence, reflection, and endurance.  
+The dream shifted: not only to play the piano,  
+but to build it anew.`,
       impact:
-        "Recognized personal growth as the foundation for future success",
+        "Understood growth as the true foundation for AriaNova’s creation",
       color: "border-red-400 text-red-400",
       image:
         "https://images.unsplash.com/photo-1758506971667-fbaa8942258a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwbWFyYXRob24lMjBlbmR1cmFuY2UlMjBjaGFsbGVuZ2V8ZW58MXx8fHwxNzU4ODczNjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -118,8 +125,8 @@ Three key experiences shaped my path: each challenge became a lesson
 that strengthened perseverance, creativity, and the ability to contribute
 meaningfully to others.
 
-By learning from struggle, I am prepared to make a positive impact
-through scholarship and community engagement.`}
+Together, these lessons became the very foundation of AriaNova—
+a vision where music, growth, and innovation meet.`}
             className="text-green-400 whitespace-pre-line"
             speed={25}
           />
@@ -167,8 +174,12 @@ through scholarship and community engagement.`}
                   >
                     {experience.title}
                   </CardTitle>
-                  <div className="text-gray-400 text-sm">{experience.period}</div>
-                  <div className="text-blue-400 text-sm">{experience.lesson}</div>
+                  <div className="text-gray-400 text-sm">
+                    {experience.period}
+                  </div>
+                  <div className="text-blue-400 text-sm">
+                    {experience.lesson}
+                  </div>
                 </CardHeader>
 
                 {selectedExperience === index && (
@@ -182,7 +193,9 @@ through scholarship and community engagement.`}
 
                     <div className="p-4 bg-gray-800/30 rounded">
                       <h4 className="text-green-400 mb-2">Impact Today</h4>
-                      <p className="text-gray-300 text-sm">{experience.impact}</p>
+                      <p className="text-gray-300 text-sm">
+                        {experience.impact}
+                      </p>
                     </div>
                   </CardContent>
                 )}
@@ -228,8 +241,12 @@ through scholarship and community engagement.`}
                     <CardTitle className="text-blue-400 text-lg">
                       {experience.title}
                     </CardTitle>
-                    <div className="text-gray-400 text-sm">{experience.period}</div>
-                    <div className="text-blue-400 text-sm">{experience.lesson}</div>
+                    <div className="text-gray-400 text-sm">
+                      {experience.period}
+                    </div>
+                    <div className="text-blue-400 text-sm">
+                      {experience.lesson}
+                    </div>
                   </CardHeader>
 
                   {selectedFutureExperience === index && (
@@ -243,7 +260,9 @@ through scholarship and community engagement.`}
 
                       <div className="p-4 bg-gray-800/30 rounded">
                         <h4 className="text-green-400 mb-2">Legacy Impact</h4>
-                        <p className="text-gray-300 text-sm">{experience.impact}</p>
+                        <p className="text-gray-300 text-sm">
+                          {experience.impact}
+                        </p>
                       </div>
                     </CardContent>
                   )}
@@ -262,20 +281,21 @@ through scholarship and community engagement.`}
               and perseverance through early piano struggles.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 16:</span> Developed problem-solving
-              skills and creative thinking.
+              <span className="text-amber-300">Age 16:</span> Developed
+              problem-solving skills and creative thinking.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              <span className="text-amber-300">Age 18:</span> Recognized that effort
-              and reflection lead to meaningful growth.
+              <span className="text-amber-300">Age 18:</span> Recognized that
+              effort and reflection lead to meaningful growth.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-green-300">Age 30:</span> Applied lessons to help
-              others and contribute to community.
+              <span className="text-green-300">Age 30:</span> Applied lessons to
+              help others and contribute to community.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              <span className="text-indigo-400">Age 40:</span> Continuing lifelong learning,
-              turning experience into tools that support others’ growth.
+              <span className="text-indigo-400">Age 40:</span> Continuing
+              lifelong learning, turning experience into tools that support
+              others’ growth.
             </p>
           </div>
 

@@ -58,22 +58,20 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
       icon: <Laptop className="w-6 h-6" />,
       title: "Try, Fail, Repeat",
       timeframe: "Ages 18-30",
-      decisionPoint: "Continuos learning and building journey",
+      decisionPoint: "Continuous learning and building journey",
       reasoning: `This is the epic trial-and-error stage of my life—think of it as a coding-and-circuits training montage. 
-Whether I'm building weird software nobody asked for, circuits that shock me more than inspire me, 
-or diving into audio technology research for the ultimate AriaNova piano, 
-every glorious fail is secretly leveling me up. 
+Whether building small apps, experimenting with circuits, or diving into audio research for the future AriaNova piano, every experiment became a hidden lesson that strengthened my skills.
 Future me will thank me... or at least have epic stories and a working digital piano to show for it.`,
       tradeoffs: {
         shortTerm:
           "Climbing the 'oops-I-broke-it' ladder: try, crash, laugh, try again 😅",
         longTerm:
-          "Eventually unlock the legendary achievement: an AriaNova digital piano that actually works (and maybe even sounds amazing!)",
+          "Eventually unlock the legendary achievement: an AriaNova digital piano that works (and maybe even sounds amazing!)",
       },
       successMetrics: [
         "Successfully debug a program without losing my mind 🧠💥",
         "Make a circuit that doesn’t electrocute anyone ⚡😅",
-        "Launch first functional music education app that actually solves page turning problem",
+        "Launch first functional music education app that solves the page-turning challenge.",
         "Leverage the app’s success to firmly establish AriaNova in the market",
       ],
       contingencyPlan: `If music tech market becomes too competitive, I'll pivot to general software development while maintaining music teaching.`,
@@ -144,15 +142,15 @@ Focus shifts from growth to optimization and lifestyle design.`,
       {showIntro && (
         <div className="border-l-4 border-yellow-400 pl-4">
           <TypewriterText
-            text={`KEY DECISIONS THE BOOM OF AriaNova
+            text={`THE KEY DECISIONS THAT BUILT ARIANOVA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-The biggest decision of my life came the moment I decided to turn my DREAM into my life goal and purpose.
+The turning point of my life was the decision to transform a dream into a purpose.
 
-Along the way, these four decisions became the foundation that kept me, at 11 years old, sitting behind the piano despite wanting to quit a million times
-–– shaping the future entrepreneur behind AriaNova.
+Along the way, four key choices became the foundation that kept me at the piano despite early struggles—
+each step shaping the future entrepreneur behind AriaNova.
 
-These decisions taught me that success is 50% planning and 50% execution: 
-you need both a clear plan and the persistence to carry it out.`}
+These decisions revealed that success is 50% planning and 50% execution: 
+a clear vision must always be matched with persistence.`}
             className="text-yellow-400 whitespace-pre-line"
             speed={25}
           />
@@ -268,9 +266,16 @@ you need both a clear plan and the persistence to carry it out.`}
               freedom & tech capability →
               <span className="text-purple-400"> Global Expansion</span> →
               cultural diversity & scale →
-              <span className="text-yellow-400"> Systems Building</span> →
-              complete freedom at 40
+              <span className="text-yellow-400"> Systems Building</span> → the
+              sustainable framework for AriaNova
             </p>
+            <p className="text-gray-300 leading-relaxed mt-3">
+              Each decision builds upon the last. By 2046, this chain does not
+              just create personal freedom—it establishes
+              <span className="text-yellow-300"> AriaNova</span> as a global
+              force in music and innovation.
+            </p>
+
             <p className="text-gray-300 leading-relaxed mt-3">
               Each decision sets up the next. By 2046, this chain delivers
               exactly what I want: global freedom powered by two passions.

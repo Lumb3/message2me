@@ -122,9 +122,8 @@ export function NavigationSystem({ pages, currentPage, onNavigate }: NavigationS
           <div className="text-gray-300 text-sm space-y-1 mt-2">
             <div>Name: Erkhembileg Ariunbold</div>
             <div>uNID: u1539956</div>
-            <div>Occupation: Founder of Global Piano-Tech Company</div>
-            <div>Location: World Citizen</div>
-            <div>Passions: Music 🎹 | Technology 💻 | Freedom 🌍</div>
+            <div>Occupation: Founder of Global Piano-Tech Company & Software Engineer</div>
+            <div>Passions: Music 🎹 | Technology 💻 | Passive Income 🌍</div>
           </div>
         </div>
       )}
