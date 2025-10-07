@@ -30,8 +30,8 @@ export function ValuesPage({ onNavigate, onExplored }: ValuesPageProps) {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Challenge Makes Us Stronger",
-      subtitle: "Embracing difficulty as fuel for growth",
-      description: "Every challenge is training for the next level",
+      subtitle: "Building a foundation of unshakable mental strength.",
+      description: "Closest Example: My daily marathon training.",
       principles: [
         "Running nonstop builds mental resilience",
         "Difficult coding problems develop problem-solving skills",
@@ -51,17 +51,15 @@ By 40, this value will have built unshakeable mental toughness.`,
       icon: <Piano className="w-8 h-8" />,
       title: "Persistence Wins Everything",
       subtitle: "Sticking to your goals even when everything is against you.",
-      description: "I don't accept 'giving up' as an option",
+      description: "Closest Example: My plant-watering circuit project.",
       principles: [
-        "Goals are non-negotiable destinations",
-        "Methods can change, destination stays fixed",
-        "I have played piano for the past 8 years and will continue in the future",
-        "Daily practice beats weekend marathons",
-        "Small steps compound into massive results",
+        "Test repeatedly until the solution works, no matter how many failures.",
+        "Focus on outcomes, not rigid methods.",
+        "I have played piano for the past 8 years and will continue to do so.",
+        "Build habits through consistent, daily effort.",
+        "Small steps compound into massive results.", 
       ],
-      realWorldApplication: `This value drives my daily piano practice, coding study, and running routine. When motivation fades, persistence carries me forward. When others give up, I keep going.
-
-My global piano empire and location-independent career will be built on 20+ years of persistent daily action.`,
+      realWorldApplication: `Persistence drives my daily piano practice, coding study, and running routine. Even when motivation fades, I continue. The plant-watering project taught me that breakthroughs require patience and repeated trials. Over 20+ years, these habits will form the foundation of my global piano empire and location-independent career.`,
       decisionFramework: "When I start thinking about stopping in the middle of a run or quitting anything, I ask myself: 'Is that it?'",
       color: "border-blue-400 text-blue-400",
       image:

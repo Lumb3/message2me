@@ -17,24 +17,18 @@ export function SuccessVisionPage({
   const [showIntro, setShowIntro] = useState(false);
   const [showVisions, setShowVisions] = useState(false);
   const [activeVision, setActiveVision] = useState<number | null>(null);
-  const [showAbout, setShowAbout] = useState(false);
+  const [showAbout, setShowAbout] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+
   useEffect(() => {
-    const sequence = [
-      { delay: 300, action: () => setShowIntro(true) },
-      { delay: 2500, action: () => setShowAbout(true) },
-      { delay: 5000, action: () => setShowVisions(true) },
-    ];
-
-    const timeouts = sequence.map(({ delay, action }) =>
-      setTimeout(action, delay)
-    );
-
+    const timeout1 = setTimeout(() => setShowIntro(true), 500);
+    const timeout2 = setTimeout(() => setShowVisions(true), 2000);
     onExplored("vision");
 
     return () => {
-      timeouts.forEach((timeout) => clearTimeout(timeout));
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
     };
   }, [onExplored]);
 
@@ -116,7 +110,10 @@ export function SuccessVisionPage({
               className="font-semibold mt-2 tracking-wide bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 text-transparent bg-clip-text"
               style={{ fontSize: "1.5rem" }}
             >
-              Where Music Meets Innovation
+              <TypewriterText
+                text="
+              Where Music Meets Innovation"
+              />
             </div>
 
             {/* Meaning explanation */}
@@ -167,32 +164,36 @@ export function SuccessVisionPage({
                 className="font-semibold mt-2 tracking-wide bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 text-transparent bg-clip-text"
                 style={{ fontSize: "1.5rem" }}
               >
-                The Story Behind AriaNova
+                <TypewriterText text=" The Story Behind AriaNova" />
               </div>
 
-              <p className="text-lg">
-                It all started with an{" "}
-                <span className="text-cyan-500">11-year-old</span> who loved
-                music but struggled with everything else.
+              <p className="text-lg text-gray-200 leading-relaxed">
+                <TypewriterText
+                  text="It all started with an 11-year-old boy who loved music but struggled to make that music himself."
+                  speed={25}
+                  className="text-cyan-300"
+                />
+              </p>
+              <p className="text-lg text-gray-200">
+                <TypewriterText
+                  text={`Each practice session felt like decoding a language only the gifted could read.\n
+Was I playing it right? Why did that chord sound off? The sheet music would slip just as I found my rhythm.\n
+My teacher's guidance was helpful, but limited to once a week.`}
+                  speed={25}
+                  className="text-gray-200 whitespace-pre-line"
+                />
               </p>
 
-              <p>
-                Practice sessions felt like{" "}
-                <span className="text-amber-300">endless guessing games</span>.
-                Was I playing it right? Why did that chord sound off? The sheet
-                music would slip just as I found my rhythm. My teacher's
-                guidance was helpful, but{" "}
-                <span className="text-cyan-300">limited to once a week</span>.
+              <p className="text-lg text-gray-200 leading-relaxed">
+                <TypewriterText
+                  text={`Between lessons, I was alone — no feedback, no structure, no one to flip the pages when my hands were busy. 
+Just me, the piano, and a mountain of frustration.`}
+                  speed={25}
+                  className="text-gray-200 whitespace-pre-line"
+                />
               </p>
 
-              <p>
-                Between lessons, I was alone—no feedback, no structure, no one
-                to flip the pages when my hands were busy. Just me, the piano,
-                and a mountain of{" "}
-                <span className="text-purple-300">frustration</span>.
-              </p>
-
-              <p className="pt-4 border-t border-gray-700/50">
+              <p className="text-lg text-gray-200 leading-relaxed">
                 Years later, I realized:{" "}
                 <span className="text-green-300">
                   what if the piano itself could be the mentor?
