@@ -284,12 +284,6 @@ a clear vision must always be matched with persistence.`}
 
           <div className="flex justify-center space-x-4">
             <Button
-              onClick={() => onNavigate("journey")}
-              className="bg-amber-400/20 border border-amber-400 text-amber-400 hover:bg-amber-400/30"
-            >
-              Complete Timeline →
-            </Button>
-            <Button
               onClick={() => onNavigate("vision")}
               className="bg-blue-400/20 border border-blue-400 text-blue-400 hover:bg-blue-400/30"
             >

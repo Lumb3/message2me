@@ -17,18 +17,24 @@ export function SuccessVisionPage({
   const [showIntro, setShowIntro] = useState(false);
   const [showVisions, setShowVisions] = useState(false);
   const [activeVision, setActiveVision] = useState<number | null>(null);
-  const [showAbout, setShowAbout] = useState(true);
+  const [showAbout, setShowAbout] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
-
   useEffect(() => {
-    const timeout1 = setTimeout(() => setShowIntro(true), 500);
-    const timeout2 = setTimeout(() => setShowVisions(true), 2000);
+    const sequence = [
+      { delay: 300, action: () => setShowIntro(true) },
+      { delay: 2500, action: () => setShowAbout(true) },
+      { delay: 5000, action: () => setShowVisions(true) },
+    ];
+
+    const timeouts = sequence.map(({ delay, action }) =>
+      setTimeout(action, delay)
+    );
+
     onExplored("vision");
 
     return () => {
-      clearTimeout(timeout1);
-      clearTimeout(timeout2);
+      timeouts.forEach((timeout) => clearTimeout(timeout));
     };
   }, [onExplored]);
 
@@ -165,7 +171,7 @@ export function SuccessVisionPage({
               </div>
 
               <p className="text-lg">
-                It started with an{" "}
+                It all started with an{" "}
                 <span className="text-cyan-500">11-year-old</span> who loved
                 music but struggled with everything else.
               </p>
@@ -197,7 +203,7 @@ export function SuccessVisionPage({
                 <span className="text-cyan-400">
                   From these challenges came the vision for AriaNova
                 </span>
-                —a whole new way to learn piano. Not cold technology, but a{" "}
+                —– a whole new way to learn piano. Not cold technology, but a{" "}
                 <span className="text-amber-300">warm companion</span> that
                 understands your struggles because it was built from them.
               </p>
@@ -224,7 +230,7 @@ export function SuccessVisionPage({
               >
                 <div className="relative">
                   {/* Only render image if it exists */}
-                
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-t-lg"></div>
                   <div
                     className={`absolute top-2 right-2 p-2 rounded-full bg-black/50 ${

@@ -60,7 +60,7 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
   const explorationCommands = [
     {
       command: "explore my vision",
-      description: "AI piano forged from 8 years of learning struggles",
+      description: "AI piano crafted from 8 years of learning struggles",
       action: () => onNavigate("vision"),
       color: "text-blue-400",
     },
@@ -211,14 +211,14 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                 <p className="leading-relaxed">
                   <span className="text-emerald-300">AriaNova</span> is a
                   <span className="text-blue-400"> piano-tech</span> company
-                  that reimagines the way people learn{" "}
+                  that introduces a whole new way to learn the{" "}
                   <span className="text-cyan-300"> piano,</span> featuring
                   <span className="text-pink-500"> an AI teacher</span> built
                   directly into the instrument.
                 </p>
 
                 <p className="leading-relaxed">
-                  <span className="text-rose-300">AriaNova piano</span> solves
+                  <span className="text-rose-300">AriaNova</span> solves
                   the following{" "}
                   <span className="text-amber-300"> traditional learning</span>{" "}
                   challenges:
@@ -227,7 +227,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                 <ul className="space-y-2 ml-6 border-l-2 border-cyan-300 pl-4">
                   <li className="text-blue-300">
                     ▸ Helping{" "}
-                    <span className="text-fuchsia-300">beginners</span> to
+                    <span className="text-fuchsia-300">beginners</span> to continuously
                     level-up in <span className="text-emerald-300">weeks</span>,
                     not years
                   </li>
