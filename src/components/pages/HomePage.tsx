@@ -144,8 +144,7 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
               text={`WELCOME TO THE SOURCE CODE & MUSIC SHEET OF MY LIFE (2046)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Every key pressed and every line of code written
-brought me closer to my dream: building MY DREAM PIANO – AriaNova. 
+Every key and every line of code brought me closer to my dream: AriaNova, my AI-powered piano.
 `}
               className="text-cyan-400 whitespace-pre-line font-mono"
               speed={25}
@@ -193,6 +192,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                     Vision: 2046 ▸ AI-Powered Piano Revolution
                   </p>
                 </div>
+                <br />
               </div>
             </div>
           </div>
@@ -211,54 +211,52 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
                 <p className="leading-relaxed">
                   <span className="text-emerald-300">AriaNova</span> is a
                   <span className="text-blue-400"> piano-tech</span> company
-                  that introduces a whole new way to learn the{" "}
-                  <span className="text-cyan-300"> piano,</span> featuring
-                  <span className="text-pink-500"> an AI teacher</span> built
+                  that redefines learning with{" "}
+                  <span className="text-cyan-300"> an AI teacher,</span> built
                   directly into the instrument.
                 </p>
 
                 <p className="leading-relaxed">
-                  <span className="text-rose-300">AriaNova</span> solves
-                  the following{" "}
-                  <span className="text-amber-300"> traditional learning</span>{" "}
-                  challenges:
+                  <span className="text-rose-300">It</span> solves key{" "}
+                  <span className="text-amber-300">
+                    {" "}
+                    challenges in traditional learning:
+                  </span>{" "}
                 </p>
 
                 <ul className="space-y-2 ml-6 border-l-2 border-cyan-300 pl-4">
                   <li className="text-blue-300">
-                    ▸ Helping{" "}
-                    <span className="text-fuchsia-300">beginners</span> to continuously
-                    level-up in <span className="text-emerald-300">weeks</span>,
+                    ▸ Level-up <span className="text-green-400">in weeks</span>,
                     not years
                   </li>
                   <li className="text-emerald-300">
-                    <span className="text-purple-400">▸ Flipping </span>
-                    <span className="text-rose-300">sheet music</span>{" "}
-                    automatically at just the{" "}
-                    <span className="text-cyan-300">right moment</span>
+                    <span className="text-purple-400">▸ Auto-flip</span>
+                    <span className="text-rose-300"> notes </span>{" "}
+                    <span className="text-cyan-300">at the right moment</span>
                   </li>
                   <li className="text-fuchsia-300">
-                    ▸ Delivering{" "}
+                    ▸ Receive{" "}
                     <span className="text-blue-400 font-mono">
                       real-time guidance{" "}
                     </span>
-                    and{" "}
-                    <span className="text-blue-500">expert corrections</span>
+                    and <span className="text-blue-500"> corrections</span>
                   </li>
                   <li className="text-emerald-300">
-                    ▸ Creating a{" "}
+                    ▸ Follow a{" "}
                     <span className="text-purple-400">personalized</span>,
-                    <span className="text-blue-400 font-mono"> structured</span>{" "}
+                    <span className="text-green-400 font-mono">
+                      {" "}
+                      structured
+                    </span>{" "}
                     learning plan
                   </li>
                 </ul>
 
                 <p className="leading-relaxed text-rose-200 mt-4 pt-4 border-t border-gray-700">
-                  Every frustration became{" "}
-                  <span className="text-blue-400">fuel</span>, and every
-                  struggle became a
-                  <span className="text-amber-400"> feature</span>. AriaNova is
-                  a real solution, born from years of my piano studies.
+                  Every struggle became{" "}
+                  <span className="text-blue-400">a feature.</span> AriaNova is
+                  the solution born from my years of piano practice and
+                  exploration of technology
                 </p>
               </div>
             </div>
@@ -272,7 +270,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
           <div className="flex items-center gap-5 mb-4">
             <span className="text-amber-400"> 🗒️ </span>
             <TypewriterText
-              text="Creator's NOTE: How to Navigate This Experience"
+              text="Creator's NOTE: How to Navigate in This Website"
               className="text-amber-400 font-mono"
               speed={25}
             />
@@ -304,7 +302,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
               <span className="text-cyan-400 font-mono flex-shrink-0">3.</span>
               <span>
                 Click the <span className="text-blue-400 font-mono">Play</span>{" "}
-                button to hear my piano performance.
+                button to hear piano music.
               </span>
             </p>
 
@@ -321,7 +319,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
             <p className="flex items-start gap-2">
               <span className="text-cyan-400 font-mono flex-shrink-0">5.</span>
               <span>
-                Some images that envision the future, like the one above, were
+                Some future-envisioning images, like the ones above, were
                 generated with{" "}
                 <span className="text-yellow-400 font-mono">AI</span>, but the
                 entire website was hand-coded, line by line. Check{" "}
@@ -338,8 +336,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
               <span className="text-cyan-400 font-mono flex-shrink-0">4.</span>
               <span>
                 This website is intended for viewing on a
-                <span className="text-blue-400"> computer/laptop </span>{" "}
-                only.
+                <span className="text-blue-400"> computer/laptop </span> only!
               </span>
             </p>
           </div>
