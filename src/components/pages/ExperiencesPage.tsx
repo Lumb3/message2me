@@ -89,7 +89,7 @@ but to build it anew.`,
         "Understood growth as the true foundation for AriaNova’s creation",
       color: "border-red-400 text-red-400",
       image:
-        "https://images.unsplash.com/photo-1758506971667-fbaa8942258a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydW5uaW5nJTIwbWFyYXRob24lMjBlbmR1cmFuY2UlMjBjaGFsbGVuZ2V8ZW58MXx8fHwxNzU4ODczNjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "public/assets/running.jpeg",
     },
   ];
 

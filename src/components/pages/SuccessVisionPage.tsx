@@ -164,33 +164,32 @@ export function SuccessVisionPage({
                 className="font-semibold mt-2 tracking-wide bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 text-transparent bg-clip-text"
                 style={{ fontSize: "1.5rem" }}
               >
-                <TypewriterText text=" The Story Behind AriaNova" />
+                <TypewriterText
+                  text=" The Story Behind AriaNova"
+                  speed={25}
+                  className="text-cyan-400"
+                />
               </div>
 
               <p className="text-lg text-gray-200 leading-relaxed">
-                <TypewriterText
-                  text="It all started with an 11-year-old boy who loved music but struggled to make that music himself."
-                  speed={25}
-                  className="text-cyan-300"
-                />
-              </p>
-              <p className="text-lg text-gray-200">
-                <TypewriterText
-                  text={`Each practice session felt like decoding a language only the gifted could read.\n
-Was I playing it right? Why did that chord sound off? The sheet music would slip just as I found my rhythm.\n
-My teacher's guidance was helpful, but limited to once a week.`}
-                  speed={25}
-                  className="text-gray-200 whitespace-pre-line"
-                />
+                It all started with an 11-year-old boy who loved music but
+                struggled to make that music himself.
               </p>
 
-              <p className="text-lg text-gray-200 leading-relaxed">
-                <TypewriterText
-                  text={`Between lessons, I was alone — no feedback, no structure, no one to flip the pages when my hands were busy. 
-Just me, the piano, and a mountain of frustration.`}
-                  speed={25}
-                  className="text-gray-200 whitespace-pre-line"
-                />
+              <p className="text-lg text-gray-200 whitespace-pre-line">
+                Each practice session felt like decoding a language only the
+                gifted could read. Was I playing it right? Why did that chord
+                sound off? The sheet music would slip just as I found my rhythm.
+                My teacher's guidance was helpful, but limited to once a week.
+              </p>
+
+              <p className="text-lg text-gray-200 leading-relaxed whitespace-pre-line">
+                Between lessons, I was alone — no{" "}
+                <span className="text-blue-400">feedback</span>, no{" "}
+                <span className="text-purple-400">structure</span>, no one to{" "}
+                <span className="text-green-400">flip</span> the pages when my
+                hands were busy. Just me, the piano, and a mountain of
+                frustration.
               </p>
 
               <p className="text-lg text-gray-200 leading-relaxed">
