@@ -100,7 +100,12 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
 
   const criticalDecisions = [
     {
-      icon: <Piano className="w-6 h-6" />,
+      icon: (
+        <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+          <Piano className="w-5 h-5" />
+        </div>
+      ),
+
       title: "Piano Business",
       timeframe: "Ages 22-26",
       progress: 40,
@@ -138,13 +143,17 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
       valueAlignment: ["Challenge Makes Us Stronger", "Persistence Wins"],
     },
     {
-      icon: <Laptop className="w-6 h-6" />,
+      icon: (
+        <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+          <Laptop className="w-6 h-6" />
+        </div>
+      ),
       title: "Try, Fail, Repeat",
       timeframe: "Ages 18-30",
       progress: 50,
       color: "green",
       glowColor: "rgba(34, 197, 94, 0.5)",
-      tagline: "Build through experimentation",
+      tagline: "Continuous learning and building stage",
       keyMilestones: [
         {
           icon: <Zap className="w-4 h-4" />,
@@ -176,10 +185,14 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
       valueAlignment: ["Challenge Makes Us Stronger", "Persistence Wins"],
     },
     {
-      icon: <Globe className="w-6 h-6" />,
+      icon: (
+        <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+          <Globe className="w-6 h-6" />
+        </div>
+      ),
       title: "The Establishment of AriaNova",
       timeframe: "Ages 26-36",
-      progress: 12,
+      progress: 5,
       color: "purple",
       glowColor: "rgba(168, 85, 247, 0.5)",
       tagline: "Scale globally, live nomadically",
@@ -214,7 +227,11 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
       valueAlignment: ["Challenge Makes Us Stronger", "Persistence Wins"],
     },
     {
-      icon: <Calendar className="w-6 h-6" />,
+      icon: (
+        <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+          <Calendar className="w-6 h-6" />
+        </div>
+      ),
       title: "Systems Over Hours",
       timeframe: "Ages 30-40",
       progress: 0,
@@ -259,7 +276,7 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
         <div className="border-l-4 border-yellow-400 pl-4">
           <TypewriterText
             text={`THE DECISIONS THAT BUILT ARIANOVA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 The turning point of my life came when a dream became a purpose.
 Four pivotal choices. One unified vision.
 Success = Vision + Persistence
@@ -478,7 +495,9 @@ Success = Vision + Persistence
             <div className="flex items-center justify-center gap-6 flex-wrap mb-4">
               {/* Step 1 */}
               <div className="flex flex-col items-center text-center bg-blue-900/20 rounded border border-blue-400/30">
-                <Piano className="w-6 h-6 text-blue-400 mb-1" />
+                <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+                  <Piano className="w-6 h-6 text-blue-400 mb-1" />
+                </div>
                 <div className="text-blue-400 font-mono">Piano</div>
                 <div className="text-gray-400">Foundation</div>
               </div>
@@ -488,7 +507,10 @@ Success = Vision + Persistence
 
               {/* Step 2 */}
               <div className="flex flex-col items-center text-center bg-green-900/20 rounded border border-green-400/30">
-                <Laptop className="w-6 h-6 text-green-400 mb-1" />
+                <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+                  <Laptop className="w-6 h-6 text-green-400 mb-1" />
+                </div>
+
                 <div className="text-green-400 font-mono">Code</div>
                 <div className="text-gray-400">Innovation</div>
               </div>
@@ -498,7 +520,9 @@ Success = Vision + Persistence
 
               {/* Step 3 */}
               <div className="flex flex-col items-center text-center bg-purple-900/20 rounded border border-purple-400/30">
-                <Globe className="w-6 h-6 text-purple-400 mb-1" />
+                <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+                  <Globe className="w-6 h-6 text-purple-400 mb-1" />
+                </div>
                 <div className="text-purple-400 font-mono">Global</div>
                 <div className="text-gray-400">Expansion</div>
               </div>
@@ -508,7 +532,9 @@ Success = Vision + Persistence
 
               {/* Step 4 */}
               <div className="flex flex-col items-center text-center bg-amber-900/20 rounded border border-amber-400/30">
-                <Calendar className="w-6 h-6 text-amber-400 mb-1" />
+                <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-full">
+                  <Calendar className="w-6 h-6 text-amber-400 mb-1" />
+                </div>
                 <div className="text-amber-400 font-mono">Systems</div>
                 <div className="text-gray-400">Freedom</div>
               </div>
