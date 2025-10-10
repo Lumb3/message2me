@@ -41,16 +41,18 @@ export function ExperiencesPage({
       period: "Age 11. Children's Palace of Mongolia",
       lesson: "Early struggles build resilience",
       story: `
-The first time I sat at a piano, I was completely adrift.  
-Sheet music looked like a secret code I wasn’t meant to read.  
-Watching countless Youtube tutorials were helpless.
-
-That first week was like a battle.  
-A hard one.  
-
-And yet, something in those 88 keys kept pulling me back.  
-Every wrong note, every stumble, was quietly shaping the very features  
-that would one day live within AriaNova`,
+My hands hovered above the keys,
+a stranger to the smooth, white shore.
+The sheet music's black dots and dashes
+were a language I couldn't learn.
+Each tutorial was a voice I could not follow.
+That first week, my fingers stumbled,
+and the room filled with discordant clashes.
+And yet, a phantom melody glimmered beneath the noise,
+beckoning me back to those 88 keys.
+Every wrong note, every stumble,
+was slowly carving the very features that would one day live within AriaNova.
+`,
       impact:
         "Learned that dedication and perseverance turn challenges into growth",
       color: "border-blue-400 text-blue-400",
@@ -62,11 +64,18 @@ that would one day live within AriaNova`,
       period: "Age 16. Kids Code Academy, Ulaanbaatar",
       lesson: "Creativity and initiative solve challenges",
       story: `
-Programming began to feel like another kind of music,  
-where logic and rhythm wove together in harmony.  
-What started at eleven, fumbling through piano keys,  
-evolved into a vision: technology and piano united.  
-AriaNova was no longer just a dream –– it became the path I knew I had to follow.`,
+The binary pulse of the code
+became a metronome,
+each line a chord struck in silence.
+The eleven-year-old hands,
+that fumbled notes on ivory,
+now find a perfect pitch
+in a digital hum.
+The dream of AriaNova,
+long held,
+unfurls not as a path,
+but as a single, certain note—
+a purpose played true.`,
       impact:
         "Discovered my passion to connect music and technology",
       color: "border-green-400 text-green-400",
@@ -78,13 +87,14 @@ AriaNova was no longer just a dream –– it became the path I knew I had to fo
       period: "Age 18. Ulaanbaatar Marathon 2024 (50th place)",
       lesson: "Struggle transforms into strength",
       story: `
-Like a marathon, every struggle was another mile.  
-Late nights, wrong notes, broken code—  
-each setback carried me forward.  
-Progress came not from talent alone,  
-but from persistence, reflection, and endurance.  
-The dream shifted: not only to play the piano,  
-but to build it anew.`,
+Each struggle, a mile marker passed.
+Late nights, wrong notes, the broken code’s harsh sting—
+setbacks fueling the forward press.
+Not talent’s bloom, but persistence,
+reflection, and the long breath of endurance
+forged the way. My dream reshaped:
+not simply to play the piano,
+but to build it anew.  `,
       impact:
         "Understood growth as the true foundation for AriaNova’s creation",
       color: "border-red-400 text-red-400",
@@ -99,13 +109,13 @@ but to build it anew.`,
       title: "Applying Skills for Impact",
       period: "Age 40. Lifelong Learning",
       lesson: "Persistence and knowledge create contribution",
-      story: `Years of dedication to learning and problem-solving are now applied
-to helping others overcome challenges.
-The lessons from early struggles guide mentorship, community engagement,
-and fostering learning environments where students can thrive.
-
-Success is measured not only by personal achievement, but by the
-opportunities created for others to grow and succeed.`,
+      story: `From dedicated years, a quiet strength is born,
+a practiced hand to lift the troubled stone.
+The early lessons, a map of worn trails,
+now guide a path of shared purpose and light.
+Success, a harvest of a different kind—
+measured not in bushels of personal gain,
+but in the fields where others find their yield. `,
       impact:
         "Transforming personal experiences into tools for community impact",
       color: "border-indigo-400 text-pink-400",
