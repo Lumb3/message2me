@@ -41,17 +41,13 @@ export function ExperiencesPage({
       period: "Age 11. Children's Palace of Mongolia",
       lesson: "Early struggles build resilience",
       story: `
-My hands hovered above the keys,
-a stranger to the smooth, white shore.
-The sheet music's black dots and dashes
-were a language I couldn't learn.
-Each tutorial was a voice I could not follow.
-That first week, my fingers stumbled,
-and the room filled with discordant clashes.
-And yet, a phantom melody glimmered beneath the noise,
-beckoning me back to those 88 keys.
-Every wrong note, every stumble,
-was slowly carving the very features that would one day live within AriaNova.
+My hands hovered above the keys, strangers to the smooth white shore.
+The sheet music’s black dots and dashes—an alien tongue I could not speak.
+Each tutorial whispered, but I could not follow its voice.
+That first week, my fingers stumbled; the room filled with discordant clashes.
+And yet, beneath the noise, a phantom melody shimmered—beckoning me back to those 88 keys.
+Now I realize:
+Every wrong note, every falter, was carving the contours that would one day live within AriaNova.
 `,
       impact:
         "Learned that dedication and perseverance turn challenges into growth",
@@ -64,16 +60,19 @@ was slowly carving the very features that would one day live within AriaNova.
       period: "Age 16. Kids Code Academy, Ulaanbaatar",
       lesson: "Creativity and initiative solve challenges",
       story: `
-The binary pulse of the code
-became a metronome,
-each line a chord struck in silence.
-The eleven-year-old hands,
-that fumbled notes on ivory,
-now find a perfect pitch
+The binary pulse of code
+becomes a metronome,
+each line a chord
+struck in silence.
+
+Eleven-year-old hands,
+that once fumbled notes on ivory,
+now find perfect pitch
 in a digital hum.
+
 The dream of AriaNova,
-long held,
-unfurls not as a path,
+long-held,
+unfurls not as a path
 but as a single, certain note—
 a purpose played true.`,
       impact:
@@ -87,14 +86,22 @@ a purpose played true.`,
       period: "Age 18. Ulaanbaatar Marathon 2024 (50th place)",
       lesson: "Struggle transforms into strength",
       story: `
-Each struggle, a mile marker passed.
-Late nights, wrong notes, the broken code’s harsh sting—
+Each struggle,
+a mile marker passed.
+
+Late nights, wrong notes,
+the broken code’s harsh sting—
 setbacks fueling the forward press.
-Not talent’s bloom, but persistence,
-reflection, and the long breath of endurance
-forged the way. My dream reshaped:
+
+Not talent’s bloom,
+but persistence,
+reflection,
+and the long breath of endurance
+forged the way.
+
+My dream reshaped:
 not simply to play the piano,
-but to build it anew.  `,
+but to build it anew.`,
       impact:
         "Understood growth as the true foundation for AriaNova’s creation",
       color: "border-red-400 text-red-400",
@@ -109,13 +116,20 @@ but to build it anew.  `,
       title: "Applying Skills for Impact",
       period: "Age 40. Lifelong Learning",
       lesson: "Persistence and knowledge create contribution",
-      story: `From dedicated years, a quiet strength is born,
-a practiced hand to lift the troubled stone.
-The early lessons, a map of worn trails,
-now guide a path of shared purpose and light.
+      story: `From dedicated years,
+a quiet strength is born—
+a practiced hand
+to lift the troubled stone.
+
+The early lessons,
+a map of worn trails,
+now guide a path
+of shared purpose and light.
+
 Success, a harvest of a different kind—
 measured not in bushels of personal gain,
-but in the fields where others find their yield. `,
+but in the fields
+where others find their yield.`,
       impact:
         "Transforming personal experiences into tools for community impact",
       color: "border-indigo-400 text-pink-400",
