@@ -77,7 +77,7 @@ but as a single, certain note—
 a purpose played true.`,
       impact: "Discovered my passion to connect music and technology",
       color: "border-green-400 text-green-400",
-      image: "public/assets/github.png",
+      image: "assets/github.png",
     },
     {
       icon: <Zap className="w-6 h-6" />,
