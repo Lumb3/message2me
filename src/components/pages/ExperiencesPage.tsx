@@ -75,10 +75,9 @@ long-held,
 unfurls not as a path
 but as a single, certain note—
 a purpose played true.`,
-      impact:
-        "Discovered my passion to connect music and technology",
+      impact: "Discovered my passion to connect music and technology",
       color: "border-green-400 text-green-400",
-      image: "assets/github.png",
+      image: "public/assets/github.png",
     },
     {
       icon: <Zap className="w-6 h-6" />,
@@ -105,8 +104,8 @@ but to build it anew.`,
       impact:
         "Understood growth as the true foundation for AriaNova’s creation",
       color: "border-red-400 text-red-400",
-      image:
-        "public/assets/running.jpeg",
+      isVideo: true, // new flag
+      src: "/assets/exercise.mp4", // video source
     },
   ];
 
@@ -177,11 +176,23 @@ a vision where music, growth, and innovation meet.`}
                 }
               >
                 <div className="relative bg-black">
-                  <ImageWithFallback
-                    src={experience.image}
-                    alt={experience.title}
-                    className="w-full h-40 object-cover rounded-t-lg"
-                  />
+                  {experience.isVideo ? (
+                    <video
+                      src={experience.src}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-40 object-cover rounded-t-lg"
+                    />
+                  ) : (
+                    <ImageWithFallback
+                      src={experience.image}
+                      alt={experience.title}
+                      className="w-full h-40 object-cover rounded-t-lg"
+                    />
+                  )}
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-t-lg"></div>
                   <div
                     className={`absolute top-3 right-3 p-2 rounded-full bg-black/70 ${
