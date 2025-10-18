@@ -536,7 +536,7 @@ brought me closer to my dream: building MY DREAM PIANO – AriaNova.
             />
             <p className="text-gray-400 mt-2">
               Use the <span className="text-green-400">top-menu</span> to
-              explore my journey →
+              explore each section more conveniently →
             </p>
           </div>
 
