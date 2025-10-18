@@ -135,7 +135,7 @@ where others find their yield.`,
       image: "assets/MIDI.jpeg",
     },
   ];
-
+// Final Deployment
   return (
     <div className="space-y-6">
       {showIntro && (
