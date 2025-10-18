@@ -142,7 +142,6 @@ where others find their yield.`,
         <div className="border-l-4 border-green-400 pl-4">
           <TypewriterText
             text={`THE JOURNEY OF GROWTH AND IMPACT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Three key experiences shaped my path: each challenge became a lesson
 that strengthened perseverance, creativity, and the ability to contribute

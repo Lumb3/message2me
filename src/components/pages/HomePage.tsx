@@ -254,7 +254,6 @@ export function HomePage({ onNavigate, onExplored }: HomePageProps) {
                 <Sparkles className="w-5 h-5 text-cyan-400" />
                 <TypewriterText
                   text={`WELCOME TO THE SOURCE CODE & MUSIC SHEET OF MY LIFE (2046)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Every key pressed and every line of code written
 brought me closer to my dream: building MY DREAM PIANO – AriaNova.

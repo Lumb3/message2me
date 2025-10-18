@@ -95,7 +95,6 @@ By 40, this value will have built unshakeable mental toughness.`,
         <div className="border-l-4 border-purple-400 pl-4 flex items-start justify-between">
           <TypewriterText
             text={`VALUES THAT FUEL SUCCESS
-━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Two core principles drive everything I do.
 Simple. Powerful. Proven through action.

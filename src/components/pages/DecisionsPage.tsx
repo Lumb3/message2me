@@ -276,7 +276,7 @@ export function DecisionsPage({ onNavigate, onExplored }: DecisionsPageProps) {
         <div className="border-l-4 border-yellow-400 pl-4">
           <TypewriterText
             text={`THE DECISIONS THAT BUILT ARIANOVA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 The turning point of my life came when a dream became a purpose.
 Four pivotal choices. One unified vision.
 Success = Vision + Persistence
