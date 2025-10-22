@@ -65,6 +65,7 @@ export function SuccessVisionPage({
       color: "border-blue-400 text-blue-400",
       imageAlt: "AI Piano Teacher",
     },
+    // Final
     {
       icon: <Music className="w-10 h-10 ml-6" />,
       title: "Smart Sheet Music",
