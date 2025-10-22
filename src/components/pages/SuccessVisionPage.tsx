@@ -54,7 +54,7 @@ export function SuccessVisionPage({
 
   const visionPillars = [
     {
-      icon: <Bot className="w-10 h-10" />,
+      icon: <Bot className="w-10 h-10 ml-6" />,
       title: "AI Piano Teacher",
       description: "Learns each student's struggles",
       details: `Adjusting tempo, pausing at the right spots, and interpreting music notation are major challenges for beginners without a skilled teacher.
@@ -66,7 +66,7 @@ export function SuccessVisionPage({
       imageAlt: "AI Piano Teacher",
     },
     {
-      icon: <Music className="w-10 h-10" />,
+      icon: <Music className="w-10 h-10 ml-6" />,
       title: "Smart Sheet Music",
       description: "Flips pages, highlights notes",
       details: `Manually turning pages while playing often made me lose my place.
@@ -78,7 +78,7 @@ export function SuccessVisionPage({
       imageAlt: "Smart Sheet Music",
     },
     {
-      icon: <Sparkles className="w-10 h-10" />,
+      icon: <Sparkles className="w-10 h-10 ml-6" />,
       title: "Learning Revolution",
       description: "A month, not years to mastery",
       details: `Having a structured learning plan is crucial—trust me, I learned this the hard way after five years of pounding keys like a caffeinated squirrel, occasionally staring at the piano wondering if it was mocking me.
@@ -262,7 +262,7 @@ export function SuccessVisionPage({
           <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-400/30 rounded-lg p-6">
             <div className="flex items-center gap-3 mb-4">
               <Piano className="w-6 h-6 text-blue-400" />
-              <h3 className="text-blue-400 text-xl">
+              <h3 className="text-blue-400 text-xl ml-6">
                 From Frustration to Solution
               </h3>
             </div>
